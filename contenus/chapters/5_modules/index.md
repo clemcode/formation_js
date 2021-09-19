@@ -21,20 +21,6 @@ On peut "importer" des scripts dans les HTML, via les balises `<script>`, soit e
 
 ---
 
-# **_À vos claviers !!!_**
-
-Dans le dossier `src`, créer plusieurs fichiers avec du code
-
-- `createTweetLi.js`
-- `createTweetsOl.js`
-- `createFilterButton.js`
-- `fetchJson.js`
-- `main.js`
-
-et les charger avec `<script src="...">` dans le `<head>`.
-
----
-
 ## Dépendances explicites
 
 Les différents morceaux de code d'une application dépendent les uns des autres. Mais en JavaScript, ces dépendances sont par défaut **implicites**.
@@ -107,14 +93,6 @@ Toutes les dépendances d'un script `"module"` seront directement importées en 
   <body></body>
 </html>
 ```
-
-# **_À vos claviers !!!_**
-
-Ouvrez le fichier `index.html` avec [VS Code LiveServer](https://marketplace.visualstudio.com/items?itemName=ritwickdey.LiveServer).
-
-Puis utiliser les syntaxes `import` et `export` pour reconstruire votre arbre de dépendances, et retrouver votre code fonctionnel.
-
----
 
 ## Aller plus loin
 

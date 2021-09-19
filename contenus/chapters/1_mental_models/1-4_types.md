@@ -1,10 +1,6 @@
-# Combien de valeurs ?
+# Étudions les différents types de valeurs
 
 _Basé sur [Just Javascript](https://justjavascript.com/), de [Dan Abramov](https://twitter.com/dan_abramov)._
-
-Compter les valeurs n'a pas d'intérêt en soi.
-
-En revanche, l'exercice permet de réfléchir à ce qui distingue les valeurs entre elles, et donc de commencer à aborder la notion d'égalité, si particulière en Javascript.
 
 - Undefined
 - Null
@@ -215,7 +211,7 @@ rapper.name = 'Mike'; // Dot notation
 rapper['name'] = 'Mitch'; // Bracket notation
 ```
 
-_On reparlera des propriétés plus tard._
+**Les propriétés d'un objet sont des câbles** qui partent de l'objet, et vont vers une valeur.
 
 ### On peut créer des objets
 

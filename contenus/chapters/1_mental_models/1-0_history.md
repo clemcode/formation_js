@@ -1,10 +1,38 @@
 # Un peu d'histoire
 
-- S'execute dans le navigateur, côté client.
-- A quoi sert JavaScript ?
-- Javascript est cassé...
-- ... et ne [sera jamais réparé](https://www.youtube.com/watch?v=7eNFQqMSxtU)
-- [Rapide survol par MDN](https://developer.mozilla.org/en-US/docs/Web/JavaScript/JavaScript_technologies_overview)
+Javascript est un langage de programmation interprété, faiblement typé, single
+threadé, et asynchrone.
+
+- Interprété = non compilé _(encore que...)_
+- Faiblement typé = des types existent, mais on peut faire ce qu'on veut
+  _(coucou Typescript...)_
+- Single threadé = ne peut pas paralléliser des tâches _(mais il est...)_
+- Asynchrone = est capable d'utiliser des instructions non bloquantes _(merci
+  l'Event Loop...)_
+
+## Généralités
+
+Javascript a été créé en décembre 1995 en seulement **10 jours :scream:** par
+[Brandon Eich](https://fr.wikipedia.org/wiki/Brendan_Eich), qui travaillait à
+l'époque pour [Netscape](https://fr.wikipedia.org/wiki/Netscape).
+
+**Historiquement, Javascript est un langage client**, qui s'éxécute uniquement
+dans le navigateur. L'objectif initial était de permettre d'ajouter de
+l'interactivité avec les éléments d'une page (qui n'étaient que en HTML et CSS).
+
+**Aujourd'hui, on peut également écrire du code serveur avec Javascript**, grâce
+notamment à [NodeJS](https://fr.wikipedia.org/wiki/Node.js), ou
+[Deno](https://deno.land/).
+
+Hormis l'expérimental
+[WebAssembly](https://developer.mozilla.org/fr/docs/WebAssembly), **Javascript
+est le seul langage à réellement tourner dans un navigateur**.
+
+Javascript a la mauvaise réputation d'être **un langage "cassé"**,
+[qui ne sera jamais vraiment réparé](https://www.youtube.com/watch?v=7eNFQqMSxtU).
+
+La plupart de la documentation pertinente sur Javascript est sur
+[MDN](https://developer.mozilla.org/en-US/docs/Web/JavaScript/JavaScript_technologies_overview).
 
 ## Standards
 
@@ -32,12 +60,5 @@ Un status quo est donc en place: on ne corrige pas des failles de Javascript, on
 - ECMAScript 2016
 - ECMAScript 2017
 - ECMAScript ...
-
-### Compatibilité des navigateurs
-
-- [Navigateurs](https://kangax.github.io/compat-table/es6/)
-- [Node](http://node.green/)
-
-_Les versions de JavaScript (1.7, 1.7.5, 1.8, etc.) n'existent pas (ce sont numéros de version du moteur JS de Firefox)_
 
 #### _La suite: [Le modèle mental](./1-1_mental_models.md)_

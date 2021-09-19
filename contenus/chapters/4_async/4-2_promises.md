@@ -134,29 +134,11 @@ Si on veut synchroniser plusieurs promesses, on peut utiliser
 
 - `Promise.all()`, crée la promesse d'avoir **TOUTES** les promesses
   **résolues**
-- `Promise.allSettled()`, crée la promesse d'avoir toutes les promesses
-  **terminées**
 
 ```js
 Promise.all([promesse1, promesse2]).then(function (tableauDesResultats) {
   console.log(tableauDesResultats); // [resultat1, resultat2]
 });
-
-Promise.allSettled([promesse1, promesse2]).then(function (tableauDesResultats) {
-  console.log(tableauDesResultats); // [resultat1, resultat2]
-});
-```
-
-## Autres méthodes
-
-```js
-const p = Promise.resolve("blabla"); // crée une promesse qui résoud immédiatement avec la valeur fournie
-
-const p = Promise.reject("prout"); // crée une promesse qui échoue immédiatement avec la valeur fournie
-
-const p = Promise.race([p1, p2]); // crée une promesse qui se termine dès que la promesse la plus rapide se termine
-
-const p = Promise.any([p1, p2]); // crée une promesse qui se résoud dès qu'une promesse est tenue, ou est rejetée quand toutes les promesses sont rejetées
 ```
 
 #### _La suite: [Fetch](./4-3_fetch.md)_
