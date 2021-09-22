@@ -63,6 +63,28 @@ a:visited {
 }
 ```
 
+## Quelques règles CSS utiles
+
+```css
+p {
+  /* relatives au texte */
+  color: blue;
+  font-size: 30px;
+  font-style: italic;
+  font-weight: bold;
+  text-decoration: underline;
+
+  /* relatives au bloc */
+  padding-left: 30px;
+  padding-top: 10px;
+  padding-bottom: 10px;
+  margin-right: 30px;
+  cursor: pointer;
+  background-color: grey;
+  box-shadow: 5px 10px 4px 7px black;
+}
+```
+
 ## [Box model](https://developer.mozilla.org/en-US/docs/Learn/CSS/Introduction_to_CSS/Box_model)
 
 - `width`/`height`
