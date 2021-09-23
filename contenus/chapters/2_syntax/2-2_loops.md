@@ -28,42 +28,6 @@ const isPositive = x >= 0; // true
 const isNegative = !isPositive; // false
 ```
 
-## "Falsy"
-
-En Javascript, certaines valeurs sont "falsy", c'est-à-dire considérées comme
-fausses même si elles ne sont pas forcément égales à `false`.
-
-```js
-false
-0
-NaN
-'' (chaîne vide)
-null
-undefined
-```
-
-Toutes les autres valeurs sont "truthy".
-
-Les valeurs `falsy` ne sont pas fausses.
-
-```js
-0 === false // false
-NaN === false // false
-```
-
-Inverser une valeur "falsy" renvoie `true`, inverser une valeur "truthy" renvoie
-`false`.
-
-```js
-!NaN; // true
-!null; // true
-!undefined; // true
-
-!1; // false
-!{}; // false
-![]; // false
-```
-
 ## [Conditions](https://dorey.github.io/JavaScript-Equality-Table/)
 
 Les conditions permettent d'exécuter du code particulier seulement dans certains
@@ -79,11 +43,11 @@ if (x === 1) {
 }
 ```
 
-Le code d'un `if` ne s'exécutera que si la condition associée est "truthy".
+Le code d'un `if` ne s'exécutera que si la condition associée est "vraie".
 
 ```js
 if (maCondition) {
-  // ne s'exécute que si maCondition est truthy
+  // ne s'exécute que si maCondition est vraie
 }
 ```
 

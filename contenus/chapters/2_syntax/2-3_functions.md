@@ -60,7 +60,7 @@ function cuisiner() {
   return "gateau";
 }
 
-const dessert = manger(); // dessert pointe vers 'gateau'
+const dessert = cuisiner(); // dessert pointe vers 'gateau'
 
 function chanter() {
   console.log("Lalalalala");
