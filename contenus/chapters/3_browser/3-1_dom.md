@@ -1,114 +1,102 @@
 # [DOM (Document Object Model)](https://developer.mozilla.org/en-US/docs/Web/API/Document_Object_Model)
 
-Une page HTML est un arbre grosso modo composée de noeuds et d'élements.
+Une page HTML est un arbre grosso modo composé d'élements.
 
 Le DOM est une API pour manipuler un document HTML ou XML (arbre). Souvent,
 parlant de DOM, on désigne indifféremment l'arbre HTML ou l'API DOM.
 
 [L'essentiel](https://developer.mozilla.org/fr/docs/Web/API/Document_Object_Model/Introduction#Interfaces_essentielles_du_DOM)
 
-La plupart des entités du DOM sont des éléments. Mais ces éléments héritent de
-propriétés d'autres entités, comme les noeuds, ou les écouteurs. Cela est
-similaire à la façons dont les humains héritent des propriétés des mammifères,
-etc...
+La plupart des entités du DOM sont des éléments.
 
-Être vivant -> Mammifère -> Humain
+## [Créer des éléments](https://developer.mozilla.org/fr/docs/Web/API/Document)
 
-EventTarget -> Node -> Element
+Le `document` n'est pas un élément, c'est un **noeud** spécial.
 
-Les `element` sont des `nodes`, mais pas l'inverse, les `nodes` sont des
-`event targets`, mais pas l'inverse.
-
-## [Node](https://developer.mozilla.org/fr/docs/Web/API/Node)
-
-Représentent les noeuds de l'arbre.
-
+Il permet notamment d'accéder à l'élément `body`:
 ```js
-n.children;
-n.parentNode;
-parent.append(enfant);
-n.remove();
-n.replaceWith(n2);
+document.body // renvoie le body
 ```
 
-Tant qu'un noeud n'est pas "accroché" au <body>, (via éventuellement des noeuds
-intermédiaires), il ne sera pas affiché à l'écran.
-
-## [Document](https://developer.mozilla.org/fr/docs/Web/API/Document)
-
-Le document est un noeud spécial.
-
-Il englobe tous les noeuds/éléments de la page, permet de rechercher des
+Il englobe tous les éléments de la page, permet de rechercher des
 éléments, de les créer, de les ajouter à la page.
 
 ```js
-document.body; // renvoie le body
-
 const maDiv = document.createElement("div"); // crée une div orpheline
-const monSvg = document.createElementNS("http://www.w3.org/2000/svg", "g"); // pour le SVG
 
 const myElement = document.getElementById("myId"); // renvoie l'élément qui a l'id 'myId'
 const found = document.querySelector(selector); // renvoie le premier élément correspondant de la page
 const founds = document.querySelectorAll(selector); // renvoie un iterateur avec tous les éléments de la page correspondant
 ```
 
-## [Element](https://developer.mozilla.org/en-US/docs/Web/API/element)
+## [Interagir avec l'arbre](https://developer.mozilla.org/fr/docs/Web/API/Node)
 
-Tous les éléments sont des noeuds, mais pas l'inverse.
-
-Il existe notamment des `HTMLElement`, des `SVGElement`, etc...
-
-### Modifier un élément
+On peut obtenir obtenir des informations sur la position d'un élément dans l'arbre.
 
 ```js
-e.getAttribute(key);
-a.getAttribute('href');
-e.setAttribute(key, value);
-e.removeAttribute(key);
-e.removeAttribute('hidden');
+element.children;
+element.parentNode;
+```
 
-e.textContent = 'Blablabla...';
+On peut également manipuler cette position:
+```
+parent.append(enfant);
+element.remove();
+element.replaceWith(element2);
+```
 
-/!\ e.innerHTML = ... // DANGEREUX, à éviter
-e.innerHTML = ''; // pour vider un élément
+Tant qu'un élément n'est pas "accroché" au `<body>`, (via éventuellement des éléments
+intermédiaires), il ne sera pas affiché à l'écran.
+
+## [Modifier un élément](https://developer.mozilla.org/en-US/docs/Web/API/element)
+
+### Modifier les caractéristiques
+
+```js
+element.getAttribute(key);
+element.getAttribute('href'); // si element est un <a>
+element.setAttribute(key, value);
+element.removeAttribute(key);
+element.removeAttribute('hidden');
+
+element.textContent = 'Blablabla...';
 ```
 
 ### Rechercher un élément enfant
 
 ```js
-e.querySelector(selector);
-e.querySelectorAll(selector);
+element.querySelector(selector);
+element.querySelectorAll(selector);
 ```
 
 ### Jouer avec le style
 
 ```js
-e.className // ancien, à éviter
-e.classList // moderne, pour accéder aux styles
-e.classList.add/remove/contains/toggle
+element.className; // ancien, à éviter
+element.classList; // moderne, pour accéder aux styles
+element.classList.add('maClasse');
+element.classList.remove('maClasse');
+element.classList.contains('maClasse');
+element.classList.toggle('maClasse');
 
-e.style.backgroundColor = ... // l'équivalent CSS est background-color
+element.style.backgroundColor = ... // l'équivalent CSS est background-color
 ```
 
-## [EventTarget](https://developer.mozilla.org/fr/docs/Web/API/EventTarget)
+## [Écouter des évènements](https://developer.mozilla.org/fr/docs/Web/API/EventTarget)
 
-Tout est un `EventTarget`. Un `EventTarget` écoute les évènements qui se
-produise sur lui-même, et réagit si on lui a donné un `listener` (une fonction).
+On peut réagir aux évènements qui se produisent sur un élément grâce aux "écouteurs" d'évènements.
 
 ```js
-n.addEventListener(type, listener, options); // si l'évèvement type se produit sur n, alors exécute listener, avec des options
-n.removeEventListener(type, listener); // attention, comparaison par référence
+element.addEventListener(type, listener); // si l'évèvement type se produit sur n, alors exécute listener, avec des options
+element.removeEventListener(type, listener); // attention, comparaison par référence
 
 // Exemple
 monElement.addEventListener(
   "click",
   function () {
     console.log("yo");
-  },
-  { once: true },
+  }
 );
 ```
-
-Éviter les `onclick`, `onmousemove`... Ils sont uniques par élément.
 
 ## À suivre: [Évènements](../3_browser/3-2_events.md)

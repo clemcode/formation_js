@@ -37,8 +37,6 @@ Tout évèvenement produit a des propriétés. Certaines sont communs à tous le
 element.addEventListener("peu importe l'évènement", function (event) {
   event.target; // renvoie l'élément qui a généré l'évènement
   event.timestamp; // renvoie la date de l'évènement en ms depuis le chargement de la page
-  event.bubbles; // renseigne sur la position dans le chemin de propagation
-  event.isTrusted; // dit si l'évènement a été généré naturellement ou via du code
   event.stopPropagation(); // stoppe la propagation de l'évènement
   event.preventDefault(); // empêche les comportements par défaut
   // non exhaustif
@@ -70,7 +68,6 @@ element.addEventListener("keydown", function (event) {
   event.ctrlKey; // informe si CTRL est enfoncée
   event.metaKey; // informe si META / COMMAND est enfoncée
   event.shiftKey; // informe si SHIFT est enfoncée
-  event.key; // renvoie la valeur de la touche
   event.key; // renvoie la valeur de la touche
   event.repeat; // informe si la touche est laissée enfoncée
   // non exhaustif

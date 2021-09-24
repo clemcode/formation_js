@@ -34,8 +34,8 @@ const colors = [
 
 /* Exercice 3: Timer
     - Créer une <section> avec l'id 'exo3', et l'ajouter au body
-    - Ajouter deux divs: une avec la classe 'nb', et l'autre avec la classe 'dots'
-    - Pour chaque seconde écoulée depuis le chargement de la page,
+    - Ajouter deux <div>s: une avec la classe 'nb', et l'autre avec la classe 'dots'
+    - Pour chaque seconde écoulée (utiliser setInterval) depuis le chargement de la page,
       - afficher le nombre de points dans '.nb'
       - afficher une div avec la classe 'dot' à l'élément '.dots'
     - Stocker dans le localstorage l'info du nb de points
