@@ -39,6 +39,8 @@ const nombres = [23, 12, 57, 178, 139, 434, 222, 1000, 59, 887, 3141];
   ranger le résultat de couleurs.forEach(...) dans une variable '_longueurs'
 */
 
+const couleurs = ['rouge', 'bleu', 'vert', 'marron', 'turquoise', 'fuschia'];
+
 /* [7]
   à partir de couleurs créer un nouveau tableau 'longueurs' contenant toutes les longueurs
   en utilisant .map() et 'getLength'.
