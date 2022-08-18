@@ -1,7 +1,8 @@
-# Étudions les différents types de valeurs
+# Les types de valeurs
 
 _Basé sur [Just Javascript](https://justjavascript.com/), de [Dan Abramov](https://twitter.com/dan_abramov)._
 
+Types primitifs
 - Undefined
 - Null
 - Booléens
@@ -9,8 +10,12 @@ _Basé sur [Just Javascript](https://justjavascript.com/), de [Dan Abramov](http
 - Strings
 - Symbols
 - BigInt
+
+Types non primitifs
 - Objets
 - Functions
+
+On peut obtenir le type d'une valeur avec `typeof`.
 
 ## Undefined
 
@@ -157,6 +162,8 @@ Théoriquement, il y a autant de `'bigint'` que d'entiers.
 
 Dans la vraie vie, on peut très bien se contenter de `'number'`.
 
+> On peut utiliser des séparateurs de milliers : `1_000_000`
+
 ## String
 
 `coucou`
@@ -176,6 +183,8 @@ Les strings ne sont pas des objets, même si on en a parfois l'impression.
 let hey = 'Salut';
 console.log(hey[0]); // 'S'
 ```
+
+On peut définir des strings avec `'` ou `"`.
 
 ## Symbole
 
@@ -269,10 +278,20 @@ console.log(pie);
 
 `makeCake()` est une expression, qui demande la valeur renvoyée par l'éxecution de la fonction vers laquelle pointe `makeCake`.
 
-## En bref
+---
 
-**Le nombre de valeurs primitives est fixé**, et sera toujours le même quel que soit notre code.
+## À retenir
 
-**Le nombre de valeurs objets ou fonctions varie** au cours du temps, selon que votre code en crée, ou que le ramasse-miette en détruit.
+- Il existe 9 types de valeurs, dont 7 sont vraiment utiles au quotidien
+- `null` et `undefined` sont équivalents, et représentent l'absence de valeur
+- un `boolean` représente "vrai" (`true`) ou "faux" (`false`)
+- un `number` représente un nombre entier ou à virgule
+- il y a un nombre fini de `number`
+- une `string` représente du texte
+- il y a potentiellement autant de `string` que vous voulez
+- dans notre univers, toutes les valeurs primitives existent toujours, quelque soit notre code
+- dans notre univers, votre code peut créer des valeurs non primitives, le ramasse-miette peut les détruire
 
-#### _La suite: [Égalité(s) des valeurs](./1-5_equality.md)_
+---
+
+### _La suite : [Égalité(s) des valeurs](./1-5_equality.md)_

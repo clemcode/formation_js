@@ -4,6 +4,7 @@ _Basé sur [Just Javascript](https://justjavascript.com/), de [Dan Abramov](http
 
 ```js
 let thing = 'gateau';
+console.log(thing[0]); // g
 thing[0] = 'r';
 console.log(thing);
 ```
@@ -78,12 +79,13 @@ Ici, on ne passe pas la variable à `console.log`.
 
 Écrire `name`, c'est en réalité poser une question à Javascript:
 
-- "Quelle est la valeur pointée par `name` ?"
-- "`'romain'`"
+> Moi: "Quelle est la valeur pointée par `name` ?"
+>
+> Javascript: "`'romain'`"
 
 **Les mots sont importants**.
 
-Surtout dans votre modèle mental.
+Surtout dans notre modèle mental.
 
 Dans le cas suivant, l'usage de mauvais mots peut induire en erreur.
 
@@ -109,8 +111,6 @@ La notion de câbles est plus adaptée.
 
 Notre univers ne va donc se composer que de câbles.
 
----
-
 ### _<span style="color:royalblue">Dessiner sur une feuille tout ce qu'il se passe dans ces quelques lignes:</span>_
 
 ```js
@@ -118,6 +118,8 @@ let x = 10;
 let y = x;
 x = 0;
 ```
+
+---
 
 ## Les fondations de l'univers
 
@@ -129,10 +131,10 @@ x = 0;
 
 ---
 
-# _**À vos crayons !!!**_
+## _**À vos crayons !!!**_
 
 - Faire les exercices du fichier `/exos/1_mental_models/1-3_variables.md`
 
 ---
 
-#### _La suite: [Étudions les valeurs](./1-4_types.md)_
+### _À suivre: [Étudions les valeurs](./1-4_types.md)_

@@ -41,4 +41,4 @@ let isWeather = isRainy || isSunny;
 let isRainbow = isRainy && isSunny;
 ```
 
-#### _La suite: [Combien de valeurs ?](../../contenus/chapters/1_mental_models/1-4_count.md)_
+#### _À suivre: [Combien de valeurs ?](../../contenus/chapters/1_mental_models/1-4_count.md)_

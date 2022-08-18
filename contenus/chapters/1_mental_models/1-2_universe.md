@@ -29,9 +29,9 @@ Ces étoiles sont plus ou moins lointaines, mais sont toujours disponibles, on p
 Nombres, booléens, strings...
 
 ```js
-console.log(5);
-console.log('romain');
-console.log(undefined);
+5;
+'romain';
+undefined;
 ```
 
 Elles sont comme des étoiles: lointaines, **mon code ne peut pas les affecter**, mais je peux toujours les regarder.
@@ -39,10 +39,12 @@ Elles sont comme des étoiles: lointaines, **mon code ne peut pas les affecter**
 ### Objets et fonctions
 
 ```js
-console.log({});
-console.log([]);
-console.log(() => 1);
+{};
+[]; // tableau
+function () {};
 ```
+
+> Les tableaux sont des objets particuliers.
 
 Elles sont comme les roches de l'anneau de Saturne, proches de votre planète. **Je peux les manipuler depuis mon code**.
 
@@ -51,25 +53,12 @@ Elles sont comme les roches de l'anneau de Saturne, proches de votre planète. *
 Ces sont les questions auxquelles Javascript peut répondre.
 
 ```js
-2 + 2;
+2 + 2; // Javascript répond 4
 
-console.log(2 + 2); // 4
+console.log(2 + 2); // Javascript répond 4, puis on affiche 4 dans la console
 ```
 
 **Une expression renvoie toujours une seule valeur.**
-
-### Vérifier le type
-
-`typeof` permet de vérifier le type d'une valeur. C'est un opérateur qui permet de construire une question, une expression.
-
-Vous pouvez voir ça comme un télescope qui, posé sur votre planète, regarde les étoiles.
-
-```js
-typeof 2;
-typeof 'romain';
-```
-
-### _<span style="color:royalblue">Essayez de trouver le plus de types possible.</span>_
 
 ## Types
 
@@ -92,4 +81,6 @@ Et c'est tout.
 - Objets (`{}`, ...): pour regrouper des données
 - Functions (`() => 1`, ...): pour faire référence à du code
 
-#### _La suite: [Valeurs et variables](./1-3_variables.md)_
+---
+
+### _À suivre: [Valeurs et variables](./1-3_variables.md)_

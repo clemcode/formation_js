@@ -15,13 +15,7 @@ HTML est un langage de [balises](https://developer.mozilla.org/fr/docs/Web/Guide
 <monTag monAttribut="maValeur" />
 ```
 
-Les attributs sont comme des options pour les balises. Il y en a des communs à tous les éléments, mais en général ils sont spécifiques.
-
-Principaux attributs communs:
-
-- `hidden`
-- `class`
-- `id`
+Les attributs sont comme des options pour les balises. Il y en a des communs à tous les éléments (`hidden`, `class`, `id` ...), mais en général ils sont spécifiques.
 
 A minima, une page HTML se constitue d'un bloc `<head>` et d'un bloc `<body>`.
 
@@ -46,17 +40,11 @@ On y trouve en général:
 - [`<link>`](https://developer.mozilla.org/fr/docs/Web/HTML/Element/link) : Liens vers des ressources externes, souvent des feuilles CSS, ou la favicon
 - [`<title>`](https://developer.mozilla.org/fr/docs/Web/HTML/Element/title) : Le titre de la page, affiché dans l'onglet
 - [`<style>`](https://developer.mozilla.org/fr/docs/Web/HTML/Element/style) : Du code CSS inliné
-- [`<script>`](https://developer.mozilla.org/fr/docs/Web/HTML/Element/script) : Du code javascript, bloque le parser HTML
+- [`<script>`](https://developer.mozilla.org/fr/docs/Web/HTML/Element/script) : Du code javascript
 
 ### Styles
 
 Il y a deux options pour intégrer du style:
-
-- via un fichier externe
-
-```html
-<link rel="stylesheet" href="./style.css" />
-```
 
 - via une balise `<style>`
 
@@ -68,16 +56,15 @@ Il y a deux options pour intégrer du style:
 </style>
 ```
 
-### Scripts
-
-Il y a deux options pour intégrer du javascript:
-
 - via un fichier externe
 
 ```html
-<script src="./index.js"></script>
-<!-- bien penser à fermer la balise -->
+<link rel="stylesheet" href="./style.css" />
 ```
+
+### Scripts
+
+Il y a deux options pour intégrer du javascript:
 
 - en écrivant le script directement dans la balise `<script>`
 
@@ -87,7 +74,14 @@ Il y a deux options pour intégrer du javascript:
 </script>
 ```
 
-Les `<script>` bloquent le parser HTML, c'est-à-dire que la lecture de la page s'arrête pour chaque `<script>`, le temps de télécharger et d'exécuter chacun des `<script>`.
+- via un fichier externe
+
+```html
+<script src="./index.js"></script>
+<!-- bien penser à fermer la balise -->
+```
+
+**Les `<script>` bloquent le parser HTML**, c'est-à-dire que la lecture de la page s'arrête pour chaque `<script>`, le temps de télécharger et d'exécuter chacun des `<script>`.
 
 Il est courant de voir des `<script>` placés à la fin du `<body>`. Cette astuce sert à éviter le blocage du parser HTML, mais les `<script>` ne sont plus à leur place naturelle, c'est-à-dire dans le `<head>`.
 
@@ -98,7 +92,7 @@ Deux attributs sont intéressants pour éviter le blocage du parser, tout en lai
   - si plusieurs scripts avec `defer`, ordre d'exécution préservé
 - `async`
   - exécuté dès que possible, dès la réception du fichier
-  - Si plusieurs scripts avec `async`, aucun ordre d'execution établi
+  - si plusieurs scripts avec `async`, aucun ordre d'execution établi
 
 ## `<body>`
 
@@ -122,17 +116,11 @@ La plupart des balises servent à structurer du contenu, comme sur une page d'un
 
 - [`<table>`](https://developer.mozilla.org/fr/docs/Web/HTML/Element/table) : pour des données tabulaires
 
-  - Regarder [`display:flex`](https://developer.mozilla.org/en-US/docs/Web/CSS/flex) ou [`display:table`](https://developer.mozilla.org/en-US/docs/Web/CSS/display) en CSS pour aligner/centrer des éléments visuellement.
-
 - [`<div>`](https://developer.mozilla.org/fr/docs/Web/HTML/Element/div) [`<span>`](https://developer.mozilla.org/fr/docs/Web/HTML/Element/span) : pas de sens sémantique
 
 ### Média
 
-- [`<img>`](https://developer.mozilla.org/fr/docs/Web/HTML/Element/img)
-  - jpeg
-  - png
-  - svg
-  - gif
+- [`<img>`](https://developer.mozilla.org/fr/docs/Web/HTML/Element/img) (jpeg, png, svg, gif, webp, ...)
 
 ```html
 <img src="http://example.org/azerty.png" alt="mon image représente..." />
@@ -143,18 +131,12 @@ La plupart des balises servent à structurer du contenu, comme sur une page d'un
 
 ### Formulaires
 
+Les formulaires servent à envoyer de la donnée à un serveur sans script.
+
 ```html
 <form action="http://www.monUrl.com" method="POST">
   <label for="nom">Nom</label>
-  <input id="nom" name="nom" type="text" />
-
-  <label for="cool">
-    Etes-vous cool ?
-    <input id="cool" name="cool" type="checkbox" />
-  </label>
-
-  <label for="history">Votre histoire</label>
-  <textarea id="history" name="histoire"></textarea>
+  <input type="text" id="nom" name="nom" />
 
   <input type="submit" value="Envoyer" />
 </form>
@@ -163,20 +145,10 @@ La plupart des balises servent à structurer du contenu, comme sur une page d'un
 - [`<form>`](https://developer.mozilla.org/fr/docs/Web/HTML/Element/form)
   - Method: GET ou POST
   - Surtout jamais de formulaire imbriqué
-  - Envoyer le formulaire avec un &lt;button type="submit"> ou un &lt;input type="submit">
+  - Envoyer le formulaire avec un `<button type="submit">` ou un `<input type="submit">`
 - [`<input>`](https://developer.mozilla.org/fr/docs/Web/HTML/Element/input)
   - `type`: text, radio, url, email , number, file, search, date, datetime...
-  - `placeholder="coucou"`
-  - [`<label>`](https://developer.mozilla.org/en-US/docs/Web/HTML/Element/label) : pour le focus sur l'input quand clic sur label
-  - `required`
-- [`<textarea>`](https://developer.mozilla.org/fr/docs/Web/HTML/Element/textarea), [`<select>`](https://developer.mozilla.org/fr/docs/Web/HTML/Element/textarea) et [`<option>`](https://developer.mozilla.org/fr/docs/Web/HTML/Element/option)
+- [`<label>`](https://developer.mozilla.org/en-US/docs/Web/HTML/Element/label) : pour le focus sur l'input quand clic sur label
+- [`<textarea>`](https://developer.mozilla.org/fr/docs/Web/HTML/Element/textarea), [`<select>`](https://developer.mozilla.org/fr/docs/Web/HTML/Element/textarea) + [`<option>`](https://developer.mozilla.org/fr/docs/Web/HTML/Element/option)
 
-### Charger une autre page
-
-- [`<iframe src="http://....">`](https://developer.mozilla.org/en-US/docs/Web/HTML/Element/iframe)
-
----
-
-## [Exercice](../../../exos/0_reminders/0-1_html.md)
-
-## À suivre: [CSS](./0-2_css.md)
+### _À suivre: [CSS](./0-2_css.md)_

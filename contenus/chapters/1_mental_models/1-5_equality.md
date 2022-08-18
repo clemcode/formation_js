@@ -6,6 +6,8 @@ On va maintenant s'intéresser à comment comparer différentes valeurs.
 
 Un modèle mental solide est primordial pour ne pas se perdre dans les égalités en Javascript.
 
+Dans la plupart des langages de programmation, l'égalité s'écrit avec l'opérateur `==` (ou `!=`). En Javascript c'est un peu plus compliqué.
+
 ## Types d'égalité
 
 En Javascript, il y a **3 types d'égalité**.
@@ -103,6 +105,16 @@ console.log(false == [0]); // true
 
 **`==` est généralement évité, voire interdit**, car il ajoute de la confusion, et peut amener à des erreurs graves.
 
-> ## Always use `===` unless you have a good reason to use `==`.
+Le seul cas acceptable est `x == null`, qui permet de tester si `x` est ni `null` ni `undefined` à la fois.
 
-#### _La suite: [La syntaxe JS](../2_syntax/2-1_assignments.md)_
+---
+
+## À retenir
+- Ne jamais utiliser `==`
+- Toujours utiliser `===`
+
+> Always use `===` unless you have a good reason to use `==`.
+
+---
+
+### _À suivre: [La syntaxe JS](../2_syntax/2-0_introduction.md)_

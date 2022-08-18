@@ -1,5 +1,7 @@
 'use strict';
 
+export { default as pokemons } from './pokemon.js';
+
 function createRandomNumber() {
   return new Promise(function (resolve, reject) {
     setTimeout(() => {

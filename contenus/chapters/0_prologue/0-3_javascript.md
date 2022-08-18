@@ -1,4 +1,6 @@
-# Un peu d'histoire
+# Javascript
+
+## Un peu d'histoire
 
 Javascript est un langage de programmation interprété, faiblement typé, single
 threadé, et asynchrone.
@@ -61,4 +63,6 @@ Un status quo est donc en place: on ne corrige pas des failles de Javascript, on
 - ECMAScript 2017
 - ECMAScript ...
 
-#### _La suite: [Le modèle mental](./1-1_mental_models.md)_
+---
+
+### _À suivre: [Le modèle mental](../1_mental_models/1-1_mental_introduction.md)_

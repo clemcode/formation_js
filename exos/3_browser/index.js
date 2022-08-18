@@ -2,6 +2,10 @@
 
 // # 4_Browser
 
+fetch('https://swapi.dev/api/people/1/')
+  .then(r => r.json())
+  .then(d => console.log(d));
+
 /* Exercice 1: Couleurs
     - Créer une <div> pour chaque couleur, avec la class 'color'
     - L'ajouter à l'élément de la page qui a l'id 'exo1'

@@ -1,6 +1,52 @@
 # [Evènements](https://developer.mozilla.org/en-US/docs/Web/Events)
 
-## Types classiques
+> Réagir à ce qu'il se passe sur la page
+
+Comme la `window` ou le `document`, tous les éléments sont des [EventTarget](https://developer.mozilla.org/fr/docs/Web/API/EventTarget).
+
+Un `EventTarget` écoute les évènements qui se
+produisent sur lui-même, et réagit si on lui a donné un *listener* (une fonction).
+
+## Ajouter un *listener*
+
+```js
+element.addEventListener(type, listener, options); // si l'évènement type se produit sur element, alors exécute listener, avec des options
+```
+```js
+// Exemple
+monElement.addEventListener(
+  "click",
+  function () { console.log("yo"); }
+);
+```
+
+> Éviter les `element.onclick = ...`, `element.onmousemove = ...`. Ils permettent moins de choses, notamment ils sont uniques par élément.
+
+## Supprimer un *listener*
+
+On peut supprimer un *listener* pour un élément et un type d'évènement donné.
+```js
+element.removeEventListener(type, listener);
+```
+
+Il faut faire attention, car il faut absolument que le *listener* que l'on supprime soit le même que l'on ait ajouté plus tôt.
+
+L'exemple suivant n'aura aucun effet:
+```js
+monElement.addEventListener("click", function () { console.log("yo"); });
+monElement.removeEventListener("click", function () { console.log("yo"); }); // ceci n'aura aucun effet
+```
+
+**Pour supprimer correctement un *listener*, il faut passer sa référence**.
+```js
+function maFonction() {
+  console.log('yo');
+}
+monElement.addEventListener("click", maFonction);
+monElement.removeEventListener("click", maFonction);
+```
+
+## Évènements classiques
 
 ### Souris
 
@@ -9,14 +55,14 @@
 
 ### Formulaires
 
-- `submit` (&lt;form>)
+- `submit`
 - `input`
 - `change`
 - `keypress`, `keyup`, `keydown`
-- `scroll` (listener après le scroll)
 
 ### Autres
 
+- `scroll`
 - `resize`
   - Quand la fenêtre est redimensionnée
 - `touchstart`, `touchend`
@@ -74,8 +120,19 @@ element.addEventListener("keydown", function (event) {
 });
 ```
 
-etc...
+---
+
+## À retenir
+
+- on peut écouter tout type d'évènement sur un élément, ainsi que sur `window` et `document`
+- utiliser plutôt `.addEventListener()` que `.onclick`
+- pour supprimer correctement un listener, passer sa référence
+- les évènements ont différentes propriétés
 
 ---
 
-## À suivre: [Localstorage](../3_browser/3-3_localstorage.md)
+## Exercices
+
+---
+
+### _À suivre: [Interagir avec le réseau](./3-4_fetch.md)_

@@ -1,8 +1,10 @@
-# Modules
+# [Modules](https://developer.mozilla.org/fr/docs/Web/JavaScript/Guide/Modules)
+
+> Découper efficacement son code
 
 ## À l'ancienne
 
-On peut "importer" des scripts dans les HTML, via les balises `<script>`, soit en inline, soit en "script-src".
+On peut "importer" des scripts dans les HTML, via les balises `<script>`, soit en inline, soit en `<script src=... >`.
 
 ```html
 <!DOCTYPE html>
@@ -30,6 +32,10 @@ On souhaite rendre claires les relations entre fichiers, afin de savoir sans éq
 On veut donc rendre les dépendances entre fichiers **explicites**.
 
 ## Modules ES6
+
+Les modules sont des fichiers `.js` (ou `.mjs`) permettant d'utiliser les mots clés `import` et `export`. Ils servent à **découper proprement son code en gardant les dépendances de chaque fichier explicites**.
+
+> Les modules ES6 sont également disponibles dans NodeJS depuis la version 13.2.0.
 
 Quand on importe un module, on "récupère" ce que ce module exporte.
 
@@ -60,8 +66,8 @@ On peut importer depuis un module natif ou installé, ou depuis les fichiers loc
 ```js
 // un module importe d'autres modules
 
-import monModule from 'monModule'; // import externe
 import maFonction from './monFichierLocal'; // import local
+import monModule from 'monModule'; // import externe
 
 import { pikachu, charmander as salameche } from 'pokemons'; // on importe seulement "pikachu" et "charmander", que je renomme en "salameche"
 
@@ -94,21 +100,24 @@ Toutes les dépendances d'un script `"module"` seront directement importées en 
 </html>
 ```
 
-## Aller plus loin
 
-Le développement web moderne s'appuie énormément sur le concept de "bundling", dont le principe est le suivant:
+---
 
-On "compile" tout le code en 1 seul (gros) fichier bien construit pour le charger dans le Html.
+## À retenir
 
-Pour mettre en place du bundling, il y a plusieurs alternatives disponibles.
+- Découper son code avec des simples `<script>` ne rend pas explicites les dépendances
+- Les modules permettent de découper son code en rendant les dépendances explicites
+- Pour importer quelque chose dans un module, on utilise `import`
+- Pour exporter quelque chose d'un module, on utilise `export`
+- Un export peut être défini comme celui par défault avec `export default` (un seul par module)
+- On déclare un fichier comme module avec `<script src=... type="module">`
 
-- [`browserify`](http://browserify.org/)
-- [`webpack`](https://webpack.js.org/)
-- [`rollup`](https://rollupjs.org/guide/en)
-- [`parcel`](https://parceljs.org/)
+---
 
-Ces outils nécessitent de travailler dans un environnement Node, puis de transformer le code Node en un code compatible navigateur.
+## Exercices
 
-Pour utiliser ces outils, il est donc nécessaire d'[installer Node](https://nodejs.org/en/) et un gestionnaire de paquets, [NPM](https://www.npmjs.com/) ou [Yarn](https://yarnpkg.com/en/).
+TODO
 
-Toutes ces techniques sortent largement du cadre de ce cours, mais sont intéressantes à étudier si l'on veut aller plus loin dans le développement web avec Javascript.
+---
+
+### _À suivre: [Vers l'infini et au delà](../beyond.md)_
