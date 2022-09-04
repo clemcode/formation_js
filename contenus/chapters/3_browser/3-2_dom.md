@@ -79,6 +79,7 @@ const founds = myElement.getElementsByClassName(classname);
 e.parentNode;
 e.children;
 e.nextElementSibling;
+// ...
 ```
 
 ### Informations propres
@@ -91,6 +92,7 @@ e.className;
 e.width;
 e.height;
 e.style;
+// ...
 ```
 
 ## Manipuler des éléments
@@ -102,6 +104,7 @@ e.append(enfant); // ajoute un enfant à l'élément
 e.remove(); // retire l'élement de l'arbre
 e.removeChild(enfant); // retire un enfant de l'arbre
 e.replaceWith(n2); // remplace l'élément par un autre
+// ...
 ```
 
 ### Attributs
@@ -112,6 +115,7 @@ e.textContent = 'Coucou';
 e.innerHTML = '<div>Coucou</div>';
 e.width = '123px';
 e.height = '324px';
+// ...
 ```
 
 > Même s'il peut être pratique, `.innerHTML` est plutôt à éviter, car trop violent.
@@ -154,9 +158,9 @@ e.classList.has('class1');
 
 ## Exercices
 
-- Ouvrir le dossier `/exos/2_syntax`
+- Ouvrir le dossier `/exos/3_browser/3-2_dom`
 - Ouvrir le fichier `index.html` dans votre navigateur
-- Suivre les indications du fichier `part-1.js`, et vérifier les résultats dans
+- Suivre les indications du fichier `index.js`, et vérifier les résultats dans
   votre navigateur
 
 ---

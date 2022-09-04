@@ -2,7 +2,7 @@
 
 export { default as pokemons } from './pokemon.js';
 
-function createRandomNumber() {
+export function createRandomNumber() {
   return new Promise(function (resolve, reject) {
     setTimeout(() => {
       const n = Math.floor(Math.random() * 100);
@@ -12,11 +12,11 @@ function createRandomNumber() {
   });
 }
 
-function waitForNumber() {
-  const maxTime = 2000;
+export function waitACertainTime() {
+  const maxTime = 3500;
 
   return new Promise(function (resolve, reject) {
-    const delay = Math.floor(Math.random() * 4000);
+    const delay = Math.floor(Math.random() * 7000);
 
     setTimeout(() => {
       resolve(delay);

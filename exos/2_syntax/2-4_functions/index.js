@@ -1,5 +1,5 @@
 'use strict';
-console.log('Exos 2-4');
+console.log('Exos 2-4: Fonctions');
 
 /**========================================================================
  *                           Bonjour
@@ -33,26 +33,6 @@ console.log('*** Pourcentage ***');
  */
 
 /**========================================================================
- *                           Aléatoire
- *========================================================================**/
-console.log('*** Aléatoire ***');
-
-/**
- * 1) Créer une fonction 'lanceDés' qui renvoie un nombre entre 1 et 6.
- *
- * Utiliser
- * - Math.random() (donne un nombre aléatoire >= 0 et < 1)
- * - Math.floor() (tronque le nombre qu'on lui fournit)
- *
- *
- * 2) Utiliser cette fonction pour obtenir un nombre aléatoire entre 1 et 6
- */
-
-/**
- * 3) Modifier la fonction "lanceDés" pour pouvoir choisir la taille du dé (limites inférieures et supérieures)
- */
-
-/**========================================================================
  *                           [Bonus] Limite
  *========================================================================**/
 console.log('*** [Bonus] Limite ***');
@@ -73,34 +53,4 @@ console.log('*** [Bonus] Limite ***');
 
 /**
  * 3) Modifier la fonction "limit" pour faire la même chose sans aucune boucle.
- */
-
-/**========================================================================
- *                           [Bonus] Mot de passe
- *========================================================================**/
-console.log('*** [BONUS] Mot de passe ***');
-
-/**
- * 1) En utilisant la fonction "lanceDés", créez une fonction `getLetter`
- * qui renvoie une lettre aléatoire parmi les lettres de l'alphabet.
- * Vous pouvez utiliser la string "letters".
- */
-
-const letters = 'abcdefghijklmnopqrstuvwxyz';
-
-/**
- * 2) Créez une fonction "makePassword" qui:
- * - en entrée prend un nombre 'size'
- * - renvoie un string de longueur 'size' construite avec des lettres au hasard
- *
- * Utiliser une boucle for et la fonction "getLetter".
- */
-
-/**
- * 3) Créer une fonction 'makeStrongerPassword' qui:
- * - en entrée prend un nombre 'size' et un booléen 'withNumbers'
- * - renvoie une chaine de caractères avec des lettres aléatoires, selon les règles suivantes.
- *
- * Si 'withNumber' est vrai, faire en sorte qu'un caractère sur deux soit un nombre au hasard.
- * Si 'size' est plus petit que 8, logguer un message d'avertissement, mais créer le password quand même.
  */

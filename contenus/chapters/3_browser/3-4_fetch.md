@@ -94,6 +94,26 @@ waitForMoney();
 
 Dans l'exemple `waitForMoney` est donc également asynchrone, comme `rendLArgent`. Si on voulait aussi attendre la fin de `waitForMoney`, il faudrait de nouveau passer par `async` / `await`.
 
+## Gestion des erreurs
+
+Parfois, une opération asynchrone se passe mal.
+
+Dans ce cas, on ne peut pas récupérer le résultat de l'opération, mais on peut réagir à l'erreur avec `try {} catch {}`.
+
+```js
+async function waitForMoney() {
+  try {
+    const money = await rendLArgent();
+
+    console.log('Money', money); // ici, on a bien l'argent attendu
+  }
+  catch(error) {
+    console.log('Erreur', error); // ici, on gère le problème
+  }
+}
+
+waitForMoney();
+```
 
 ## `fetch`
 
@@ -162,7 +182,7 @@ getStarWarsData();
 
 ## Exercices
 
-- Ouvrir le dossier `/exos/3_browser`
+- Ouvrir le dossier `/exos/3_browser/3-4_fetch`
 - Ouvrir le fichier `index.html` dans votre navigateur
 - Suivre les indications du fichier `index.js`, et vérifier les résultats dans
   votre navigateur

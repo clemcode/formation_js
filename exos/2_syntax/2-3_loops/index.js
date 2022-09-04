@@ -1,5 +1,5 @@
 'use strict';
-console.log('Exos 2-3');
+console.log('Exos 2-3: Boucles');
 
 /**========================================================================
  *                           Assurance vie
@@ -36,8 +36,8 @@ console.log('*** Carte bleue ***');
  */
 
 /**
- * 5) Comment retrouver le résultat précédent avec une boucle for ?
- * 6) Comment retrouver ce résultat précédent sans aucune boucle ?
+ * Bonus 1) Comment retrouver le résultat précédent avec une boucle for ?
+ * Bonus 2) Comment retrouver ce résultat précédent sans aucune boucle ?
  */
 
 /**========================================================================

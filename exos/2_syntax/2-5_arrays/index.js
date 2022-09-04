@@ -1,5 +1,16 @@
 'use strict';
-console.log('Exos 2-5');
+console.log('Exos 2-5: Tableaux');
+
+/**========================================================================
+ *                           Ordre
+ *========================================================================**/
+console.log('*** Ordre ***');
+const nombres = [4, 5, 1, 2, 3, 6];
+
+/**
+ * 1) Ordonnez le tableau 'nombres' sans utiliser .sort()
+ * 2) Faire la même chose avec .sort()
+ */
 
 /**========================================================================
  *                           A7
@@ -42,18 +53,6 @@ const ndTokmH = 1.852; // 1 noeud vaut 1.852 km/h
  * 5) Utilisez cette fonction pour simplifier la question 3)
  * 6) Créez un tableau filtré avec uniquement les vitesses en km/h supérieures à 130 km/h
  */
-
-/**========================================================================
- *                           Noms
- *========================================================================**/
-console.log('*** Noms ***');
-
-/**
- * 1) Ajoutez 2 ou 3 personnes au tableaux "personnes", en utilisant .push()
- * 2) Créez un nouveau tableau contenant uniquement les noms des personnes en minuscules,
- * en utilisant .map() et .toLowercase()
- */
-const personnes = [{ nom: 'Romain', date: '1985-12-31' }];
 
 /**========================================================================
  *                           [Bonus] Pokemons
