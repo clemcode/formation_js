@@ -40,6 +40,15 @@ const isPositive = x >= 0; // true
 const isNegative = !isPositive; // false
 ```
 
+## Et / ou
+
+```js
+const x = 3;
+
+x > 3 && x < 10
+x > 3 || x > 30
+```
+
 ## [Conditions](https://dorey.github.io/JavaScript-Equality-Table/)
 
 Les conditions permettent d'exécuter du code particulier seulement dans certains
