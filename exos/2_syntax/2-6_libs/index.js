@@ -33,12 +33,12 @@ const personnes = [{ nom: 'Romain', date: '1985-12-31' }];
 
 /**
  * 2) Créez un nouveau tableau contenant uniquement les noms des personnes en minuscules,
- * en utilisant .map() et .toLowercase()
+ * en utilisant .map() et .toLowerCase()
  */
 
 /**
  * 3) Créez un nouveau tableau contenant uniquement les dates d'anniversaires en format "Humain",
- * en utilisant .map() et .toLocateDateString()
+ * en utilisant .map() et .toLocaleDateString()
  * - transformez la string de date en object Date
  * - pour le format "humain', vous pouvez utiliser 'fr' en locale, et l'objet 'dateFormatOptions'
  */
@@ -51,14 +51,14 @@ const dateFormatOptions = {
 };
 
 /**
- * 3) Créer une fonction "calculerAge" qui en entrée prend un string représentant la date de naissance
+ * 4) Créer une fonction "calculerAge" qui en entrée prend un string représentant la date de naissance
  * et renvoie l'âge en années
  * - un âge est une simple durée, soit la différence entre 2 dates.
  * - commencez par calculer l'âge en millisecondes
  */
 
 /**
- * 4) À partir de "personnes" et "calculerAge", créer un nouveau tableau contenant seulement les âges.
+ * 5) À partir de "personnes" et "calculerAge", créer un nouveau tableau contenant seulement les âges.
  */
 
 /**========================================================================
