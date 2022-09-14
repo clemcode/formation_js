@@ -2,14 +2,12 @@
 console.log('Exos 2-3: Boucles');
 
 /**========================================================================
- *                           Assurance vie
+ *                           Sept
  *========================================================================**/
-console.log('*** Assurance vie ***');
+console.log('*** Sept ***');
 
 /**
- * 1) Créez une variable money, l'initialiser à 10000
- * 2) Créez une boucle for qui multiplie money par 1.02 tous les 6 mois pendant 30 ans
- * 3) Afficher le résultat
+ * 1) Affichez dans la console tous les multiples de 7 entre 1 et 1000
  */
 
 /**========================================================================
@@ -20,6 +18,17 @@ console.log('*** Paires ***');
 /**
  * 1) Affichez toutes les paires possibles de nombres entre 0 et 9.
  * (1, 2) et (2, 1) sont considérées 2 paires différentes.
+ */
+
+/**========================================================================
+ *                           Assurance vie
+ *========================================================================**/
+console.log('*** Assurance vie ***');
+
+/**
+ * 1) Créez une variable money, l'initialiser à 10000
+ * 2) Créez une boucle for qui multiplie money par 1.02 tous les 6 mois pendant 30 ans
+ * 3) Afficher le résultat
  */
 
 /**========================================================================
