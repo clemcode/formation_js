@@ -9,7 +9,7 @@
 
 ## 1. Mieux comprendre Javascript
 
-- #### [Modèles mentaux](./contenus/chapters/1_mental_models/1-1_mental_models.md)
+- #### [Modèles mentaux](./contenus/chapters/1_mental_models/1-1_introduction.md)
 - #### [L'univers Javascript](./contenus/chapters/1_mental_models/1-2_universe.md)
 - #### [Les variables](./contenus/chapters/1_mental_models/1-3_variables.md)
 - #### [Étudions les valeurs](./contenus/chapters/1_mental_models/1-4_types.md)
