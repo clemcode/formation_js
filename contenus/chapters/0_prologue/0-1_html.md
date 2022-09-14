@@ -81,19 +81,6 @@ Il y a deux options pour intégrer du javascript:
 <!-- bien penser à fermer la balise -->
 ```
 
-**Les `<script>` bloquent le parser HTML**, c'est-à-dire que la lecture de la page s'arrête pour chaque `<script>`, le temps de télécharger et d'exécuter chacun des `<script>`.
-
-Il est courant de voir des `<script>` placés à la fin du `<body>`. Cette astuce sert à éviter le blocage du parser HTML, mais les `<script>` ne sont plus à leur place naturelle, c'est-à-dire dans le `<head>`.
-
-Deux attributs sont intéressants pour éviter le blocage du parser, tout en laissant les `<script>` dans le `<head>`:
-
-- `defer`
-  - on retarde l'exécution pour attendre que toute la page soit lue
-  - si plusieurs scripts avec `defer`, ordre d'exécution préservé
-- `async`
-  - exécuté dès que possible, dès la réception du fichier
-  - si plusieurs scripts avec `async`, aucun ordre d'execution établi
-
 ## `<body>`
 
 Le bloc `<body>` sert à décrire le contenu de notre page. C'est là que toute l'information à affichée est structurée.

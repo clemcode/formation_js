@@ -2,7 +2,7 @@
 
 > Découper efficacement son code
 
-## À l'ancienne
+## Les `<script />`
 
 On peut "importer" des scripts dans les HTML, via les balises `<script>`, soit en inline, soit en `<script src=... >`.
 
@@ -21,11 +21,26 @@ On peut "importer" des scripts dans les HTML, via les balises `<script>`, soit e
 </html>
 ```
 
+### Effets sur le parser HTML
+
+**Les `<script>` bloquent le parser HTML**, c'est-à-dire que la lecture de la page s'arrête pour chaque `<script>`, le temps de télécharger et d'exécuter chacun des `<script>`.
+
+Il est courant de voir des `<script>` placés à la fin du `<body>`. Cette astuce sert à éviter le blocage du parser HTML, mais les `<script>` ne sont plus à leur place naturelle, c'est-à-dire dans le `<head>`.
+
+Deux attributs sont intéressants pour éviter le blocage du parser, tout en laissant les `<script>` dans le `<head>`:
+
+- `defer`
+  - on retarde l'exécution pour attendre que toute la page soit lue
+  - si plusieurs scripts avec `defer`, ordre d'exécution préservé
+- `async`
+  - exécuté dès que possible, dès la réception du fichier
+  - si plusieurs scripts avec `async`, aucun ordre d'execution établi
+
 ---
 
 ## Dépendances explicites
 
-Les différents morceaux de code d'une application dépendent les uns des autres. Mais en JavaScript, ces dépendances sont par défaut **implicites**.
+Les différents morceaux de code d'une application dépendent les uns des autres. Mais en JavaScript, ces dépendances sont par défaut **implicites** si on se contente d'ajouter des `<script>`.
 
 On souhaite rendre claires les relations entre fichiers, afin de savoir sans équivoque quel fichier nécessite quels autres fichiers.
 
