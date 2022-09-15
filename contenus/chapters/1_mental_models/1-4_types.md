@@ -173,6 +173,8 @@ console.log(typeof 'romain'); // 'string'
 console.log(typeof ''); // 'string'
 ```
 
+> On peut définir des strings avec `'` ou `"`.
+
 Le type `'string'` représente du texte, quel que soit sa taille.
 
 Il y a potentiellement autant de `'string'` que de textes possibles. Dans notre univers, on va considérer que c'est le cas.
@@ -181,10 +183,12 @@ Les strings ne sont pas des objets, même si on en a parfois l'impression.
 
 ```js
 let hey = 'Salut';
-console.log(hey[0]); // 'S'
+hey[0]; // 'S'
+hey[3]; // 'u'
+hey.toLowerCase(); // 'salut'
+hey.toUpperCase(); // 'SALUT'
+...
 ```
-
-On peut définir des strings avec `'` ou `"`.
 
 ## Symbole
 

@@ -4,7 +4,6 @@
 
 ## [`Number`](https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/Number)
 
-- `Number.PI`
 - `Number.POSITIVE_INFINITY`
 - `Number.NEGATIVE_INFINITY`
 
@@ -19,6 +18,7 @@
 
 Une collection de fonctions pour faire des maths.
 
+- `Math.PI`
 - `Math.random()`
 - `Math.round/floor/ceil`
 - `Math.sin()`

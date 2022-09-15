@@ -24,7 +24,7 @@
 - #### [Boucles](./contenus/chapters/2_syntax/2-3_loops.md)
 - #### [Fonctions](./contenus/chapters/2_syntax/2-4_functions.md)
 - #### [Tableaux](./contenus/chapters/2_syntax/2-5_arrays.md)
-- #### [Libraires standard](./contenus/chapters/2_syntax/2-6_libs.md)
+- #### [Librairies standard](./contenus/chapters/2_syntax/2-6_libs.md)
 
 ## 3. Dans le navigateur
 
