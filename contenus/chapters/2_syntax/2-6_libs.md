@@ -59,7 +59,9 @@ uneDate.getDay();
 uneDate.getDate();
 uneDate.getMonth();
 uneDate.getFullYear();
+
 uneDate.toLocaleDateString(); // date en format humain
+uneDate.toLocaleTimeString(); // heure en format humain
 // etc ...
 
 aujourdHui - uneDate; // soustrait les dates, renvoie un entier en millisecondes

@@ -6,7 +6,6 @@ function getRandom(max) {
 
 const MAX = 2000;
 const nb = getRandom(MAX);
-console.log('NB', nb);
 
 function createCoordinates() {
   const left = getRandom(window.innerWidth);
@@ -18,7 +17,7 @@ function createCoordinates() {
   };
 }
 
-for (let i = 1; i < nb; i++) {
+for (let i = 1; i <= nb; i++) {
   const element = document.createElement('i');
   element.classList.add('dot');
 

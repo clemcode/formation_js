@@ -46,8 +46,10 @@ const monH1 = document.createElement("h1"); // crée un h1 orphelin
 const div1 = document.createElement("div");
 const div2 = document.createElement("div");
 
-document.body.append(div2); // div2 est visible à l'écran
+document.body.append(div2); // div2 est visible à l'écran, en dernier enfant de <body>
 ```
+
+> on peut aussi utiliser `.preprend()`, pour ajouter un élément en premier enfant
 
 ## Rechercher des éléments
 
@@ -55,11 +57,9 @@ document.body.append(div2); // div2 est visible à l'écran
 
 ```js
 const myElement = document.getElementById("myId"); // renvoie l'élément qui a l'id 'myId'
+
 const found = document.querySelector(selector); // renvoie le premier élément correspondant de la page
 const founds = document.querySelectorAll(selector); // renvoie un iterateur avec tous les éléments de la page correspondant
-const founds = document.getElementsByTagName(tag); // renvoie un iterateur avec tous les éléments de la page correspondant
-const founds = document.getElementsByClassName(classname); // renvoie un iterateur avec tous les éléments de la page correspondant
-
 ```
 
 ### Dans les enfants d'un élément
@@ -67,8 +67,6 @@ const founds = document.getElementsByClassName(classname); // renvoie un iterate
 ```js
 const myChild = myElement.querySelector(selector);
 const myChildren = myElement.querySelectorAll(selector);
-const founds = myElement.getElementsByTagName(tag);
-const founds = myElement.getElementsByClassName(classname);
 ```
 
 ## Accéder aux informations des éléments
@@ -89,9 +87,10 @@ e.id;
 e.textContent;
 e.innerHTML;
 e.className;
-e.width;
-e.height;
-e.style;
+
+// lire le style calculé
+getComputedStyle(e)
+
 // ...
 ```
 
@@ -100,7 +99,8 @@ e.style;
 ### Position
 
 ```js
-e.append(enfant); // ajoute un enfant à l'élément
+e.append(enfant); // ajoute un enfant à l'élément en dernier enfant
+e.prepend(enfant); // ajoute un enfant à l'élément en premier enfant
 e.remove(); // retire l'élement de l'arbre
 e.removeChild(enfant); // retire un enfant de l'arbre
 e.replaceWith(n2); // remplace l'élément par un autre
@@ -112,9 +112,10 @@ e.replaceWith(n2); // remplace l'élément par un autre
 ```js
 e.id = 'newId';
 e.textContent = 'Coucou';
-e.innerHTML = '<div>Coucou</div>';
-e.width = '123px';
-e.height = '324px';
+e.className = 'class1 class2';
+
+e.innerHTML = '<div>Coucou</div>'; // Attention
+
 // ...
 ```
 
@@ -125,6 +126,8 @@ e.height = '324px';
 On peut tout à fait modifier le style d'un élément via
 ```js
 e.style.color = 'red'; // par exemple
+e.style.height = '324px';
+e.style.width = '500px';
 ```
 
 Mais il faut avoir conscience que **passer par le `.style.` revient à *inliner* le style**, ce qui le rend prioritaire sur toute règle CSS présente dans une feuille de style.
@@ -139,8 +142,8 @@ e.className = 'class1 class2'; // difficile à manipuler
 e.classList.add('class1');
 e.classList.remove('class1');
 e.classList.toggle('class1');
-e.classList.replace('class1');
-e.classList.has('class1');
+e.classList.replace('class1', 'class2');
+e.classList.contains('class1');
 ```
 
 ---

@@ -41,6 +41,7 @@ const personnes = [{ nom: 'Romain', date: '1985-12-31' }];
  * en utilisant .map() et .toLocaleDateString()
  * - transformez la string de date en object Date
  * - pour le format "humain', vous pouvez utiliser 'fr' en locale, et l'objet 'dateFormatOptions'
+ * => uneDate.toLocaleDateString('fr', options)
  */
 
 const dateFormatOptions = {
@@ -62,26 +63,9 @@ const dateFormatOptions = {
  */
 
 /**========================================================================
- *                           [Bonus] Say Hello
+ *                           Mot de passe
  *========================================================================**/
-console.log('*** [BONUS] Say Hello ***');
-
-const languages = ['fr', 'es', 'de', 'it', 'jp'];
-
-/**
- * 1) Créer une fonction 'prepareHello' qui prend en entrée une langue 'lang' ('fr', 'it', 'es', 'de', ...)
- * et qui, en fonction de la langue, renvoie une fonction anonyme.
- * - la fonction anonyme doit prendre en entrée un 'name'
- * - la fonction anonyme doit renvoyer une string de type "Bonjour [name]"
- * - si on ne passe pas de langue, ou si la langue n'est pas reconnue, utiliser l'anglais par défaut
- * 2) Utiliser "prepareHello" pour créer plusieurs fonctions pour dire bonjour dans plusieurs langues
- * 3) Tester les fonctions créées
- */
-
-/**========================================================================
- *                           [Bonus] Mot de passe
- *========================================================================**/
-console.log('*** [BONUS] Mot de passe ***');
+console.log('*** Mot de passe ***');
 
 /**
  * 1) En utilisant la fonction "lanceDés", créez une fonction `getLetter`
@@ -100,10 +84,27 @@ const letters = 'abcdefghijklmnopqrstuvwxyz';
  */
 
 /**
- * 3) Créer une fonction 'makeStrongerPassword' qui:
+ * Bonus) Créer une fonction 'makeStrongerPassword' qui:
  * - en entrée prend un nombre 'size' et un booléen 'withNumbers'
  * - renvoie une chaine de caractères avec des lettres aléatoires, selon les règles suivantes.
  *
  * Si 'withNumber' est vrai, faire en sorte qu'un caractère sur deux soit un nombre au hasard.
  * Si 'size' est plus petit que 8, logguer un message d'avertissement, mais créer le password quand même.
+ */
+
+/**========================================================================
+ *                           [Bonus] Say Hello
+ *========================================================================**/
+console.log('*** [BONUS] Say Hello ***');
+
+const languages = ['fr', 'es', 'de', 'it', 'jp'];
+
+/**
+ * 1) Créer une fonction 'prepareHello' qui prend en entrée une langue 'lang' ('fr', 'it', 'es', 'de', ...)
+ * et qui, en fonction de la langue, renvoie une fonction anonyme.
+ * - la fonction anonyme doit prendre en entrée un 'name'
+ * - la fonction anonyme doit renvoyer une string de type "Bonjour [name]"
+ * - si on ne passe pas de langue, ou si la langue n'est pas reconnue, utiliser l'anglais par défaut
+ * 2) Utiliser "prepareHello" pour créer plusieurs fonctions pour dire bonjour dans plusieurs langues
+ * 3) Tester les fonctions créées
  */
