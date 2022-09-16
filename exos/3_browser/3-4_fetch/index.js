@@ -1,5 +1,5 @@
 'use strict';
-import { createRandomNumber, waitACertainTime } from '../../utils';
+import { createRandomNumber, waitACertainTime } from '../../utils/index.js';
 console.log('Exos 3-4: Fetch');
 
 /**========================================================================
