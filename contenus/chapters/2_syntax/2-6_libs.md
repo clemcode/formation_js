@@ -20,7 +20,9 @@ Une collection de fonctions pour faire des maths.
 
 - `Math.PI`
 - `Math.random()`
-- `Math.round/floor/ceil`
+- `Math.round()`, `Math.floor()`, `Math.ceil()`
+- `Math.max()`
+- `Math.min()`
 - `Math.sin()`
 - ...
 

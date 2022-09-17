@@ -7,6 +7,8 @@
 - [Chrome](https://www.google.com/chrome/) (ou dérivés)
 - [Firefox](https://www.mozilla.org/en-US/firefox/new/)
 
+Savoir ouvrir les outils développeur.
+
 ## Éditeurs de texte (ou IDE)
 
 - [VSCode](https://code.visualstudio.com/)

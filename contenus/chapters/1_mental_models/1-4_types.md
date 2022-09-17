@@ -219,7 +219,7 @@ On peut les modifier depuis notre code.
 Les objets ont des _propriétés_, auxquelles on peut accéder avec `[]` ou `.`:
 
 ```js
-let rapper = { name: 'Michel' };
+let rapper = { name: 'Michel', familyName: 'Jaqueson' };
 rapper.name = 'Mike'; // Dot notation
 rapper['name'] = 'Mitch'; // Bracket notation
 ```

@@ -2,6 +2,17 @@
 console.log('Exos 2-3: Boucles');
 
 /**========================================================================
+ *                           Boucles simples
+ *========================================================================**/
+console.log('*** Boucles simples ***');
+
+/**
+ * 1) À l'aide d'une boucle for, affichez dans la console tous les nombres de 4 (inclus) à 17 (exclus)
+ * 2) À l'aide d'une boucle for, affichez dans la console tous les nombres de 100 (inclus) à 90 (inclus)
+ * 3) À l'aide d'une boucle for, affichez dans la console un nombre sur 3 de 0 (inclus) à 20 (exclus)
+ */
+
+/**========================================================================
  *                           Sept
  *========================================================================**/
 console.log('*** Sept ***');
@@ -32,9 +43,9 @@ console.log('*** Assurance vie ***');
  */
 
 /**========================================================================
- *                           Carte Bleue
+ *                           [Bonus] Carte Bleue
  *========================================================================**/
-console.log('*** Carte bleue ***');
+console.log('*** [Bonus] Carte bleue ***');
 
 /**
  * 1) Créez une variable argent, l'initialiser à 1000
@@ -45,8 +56,8 @@ console.log('*** Carte bleue ***');
  */
 
 /**
- * Bonus 1) Comment retrouver le résultat précédent avec une boucle for ?
- * Bonus 2) Comment retrouver ce résultat précédent sans aucune boucle ?
+ * 5) Comment retrouver le résultat précédent avec une boucle for ?
+ * 6) Comment retrouver ce résultat précédent sans aucune boucle ?
  */
 
 /**========================================================================

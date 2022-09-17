@@ -2,6 +2,21 @@
 console.log('Exos 2-6: Libs');
 
 /**========================================================================
+ *                           Troncature
+ *========================================================================**/
+console.log('*** Troncature ***');
+
+const a = 1.23;
+const b = 2.54;
+const c = 5.99;
+
+/**
+ * 1) Utilisez Math.round sur chacun des nombres et logguez leurs résultats
+ * 2) Pareil avec Math.floor
+ * 3) Pareil avec Math.Ceil
+ */
+
+/**========================================================================
  *                           Aléatoire
  *========================================================================**/
 console.log('*** Aléatoire ***');
@@ -37,19 +52,11 @@ const personnes = [{ nom: 'Romain', date: '1985-12-31' }];
  */
 
 /**
- * 3) Créez un nouveau tableau contenant uniquement les dates d'anniversaires en format "Humain",
- * en utilisant .map() et .toLocaleDateString()
+ * 3) Créez un nouveau tableau contenant uniquement les années d'anniversaire,
+ * en utilisant .map()
  * - transformez la string de date en object Date
- * - pour le format "humain', vous pouvez utiliser 'fr' en locale, et l'objet 'dateFormatOptions'
- * => uneDate.toLocaleDateString('fr', options)
+ * - récupérer l'année avec .getFullYear()
  */
-
-const dateFormatOptions = {
-  weekday: 'long',
-  year: 'numeric',
-  month: 'long',
-  day: 'numeric',
-};
 
 /**
  * 4) Créer une fonction "calculerAge" qui en entrée prend un string représentant la date de naissance
@@ -63,9 +70,9 @@ const dateFormatOptions = {
  */
 
 /**========================================================================
- *                           Mot de passe
+ *                           [Bonus] Mot de passe
  *========================================================================**/
-console.log('*** Mot de passe ***');
+console.log('*** [Bonus] Mot de passe ***');
 
 /**
  * 1) En utilisant la fonction "lanceDés", créez une fonction `getLetter`
@@ -90,21 +97,4 @@ const letters = 'abcdefghijklmnopqrstuvwxyz';
  *
  * Si 'withNumber' est vrai, faire en sorte qu'un caractère sur deux soit un nombre au hasard.
  * Si 'size' est plus petit que 8, logguer un message d'avertissement, mais créer le password quand même.
- */
-
-/**========================================================================
- *                           [Bonus] Say Hello
- *========================================================================**/
-console.log('*** [BONUS] Say Hello ***');
-
-const languages = ['fr', 'es', 'de', 'it', 'jp'];
-
-/**
- * 1) Créer une fonction 'prepareHello' qui prend en entrée une langue 'lang' ('fr', 'it', 'es', 'de', ...)
- * et qui, en fonction de la langue, renvoie une fonction anonyme.
- * - la fonction anonyme doit prendre en entrée un 'name'
- * - la fonction anonyme doit renvoyer une string de type "Bonjour [name]"
- * - si on ne passe pas de langue, ou si la langue n'est pas reconnue, utiliser l'anglais par défaut
- * 2) Utiliser "prepareHello" pour créer plusieurs fonctions pour dire bonjour dans plusieurs langues
- * 3) Tester les fonctions créées
  */

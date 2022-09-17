@@ -18,28 +18,21 @@ En Javascript, il y a **3 types d'égalité**.
 
 ## Égalité de même valeur
 
-```js
-console.log(Object.is(2, 2)); // true
-console.log(Object.is({}, {})); // false
-```
-
-### _<span style="color:royalblue">Que pensez-vous du code suivant ?</span>_
+**L'égalité de même valeur vérifie si 2 valeurs ont la même place dans l'univers.**
 
 ```js
-let dwarves = 7;
-let continents = '7';
-let worldWonders = 3 + 4;
+Object.is(2, 2); // true
+Object.is({}, {}); // false
 
-console.log(Object.is(dwarves, continents)); // ?
-console.log(Object.is(continents, worldWonders)); // ?
-console.log(Object.is(worldWonders, dwarves)); // ?
+Object.is(7, '7')); // ?
+Object.is(7, 3 + 4)); // ?
 ```
 
 Dans notre modèle mental, si deux valeurs sont représentée par le même dessin, elles ne sont qu'une seule et même valeur.
 
 Et inversement.
 
-**La même valeur ne peut pas apparaître 2 fois dans notre modèle mental.**
+> La même valeur ne peut pas apparaître 2 fois dans notre modèle mental.
 
 Cela marche de la même façon pour les objets.
 
@@ -49,19 +42,19 @@ let cherry = banana;
 let chocolate = cherry;
 cherry = {};
 
-console.log(Object.is(banana, cherry)); // ?
-console.log(Object.is(cherry, chocolate)); // ?
-console.log(Object.is(chocolate, banana)); // ?
+Object.is(banana, cherry); // ?
+Object.is(cherry, chocolate); // ?
+Object.is(chocolate, banana); // ?
 ```
 
 ## Égalité stricte
 
 ```js
-console.log(2 === 2); // true
-console.log({} === {}); // false
+2 === 2; // true
+{} === {}; // false
 
-console.log(2 !== 3); // true
-console.log({} !== {}); // true
+2 !== 3; // true
+{} !== {}; // true
 ```
 
 Dans la plupart des cas, `===` est équivalent à `Object.is()`.
@@ -98,9 +91,9 @@ Ou ["presque égalité"](https://dorey.github.io/JavaScript-Equality-Table/) ou 
 Elle compare 2 valeurs après les avoir transformé en un type commun. On peut également dire qu'elle compare la valeur et le type.
 
 ```js
-console.log([[]] == ''); // true
-console.log(true == [1]); // true
-console.log(false == [0]); // true
+[[]] == ''; // true
+true == [1]; // true
+false == [0]; // true
 ```
 
 **`==` est généralement évité, voire interdit**, car il ajoute de la confusion, et peut amener à des erreurs graves.
@@ -117,4 +110,4 @@ Le seul cas acceptable est `x == null`, qui permet de tester si `x` est ni `null
 
 ---
 
-### _À suivre: [La syntaxe JS](../2_syntax/2-0_introduction.md)_
+### _À suivre: [Propriétés](./1-6_properties.md)_

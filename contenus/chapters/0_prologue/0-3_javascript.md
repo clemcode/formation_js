@@ -15,7 +15,7 @@ threadé, et asynchrone.
 ## Un peu d'histoire
 
 Javascript a été créé en décembre 1995 en seulement **10 jours :scream:** par
-[Brandon Eich](https://fr.wikipedia.org/wiki/Brendan_Eich), qui travaillait à
+[Brendan Eich](https://fr.wikipedia.org/wiki/Brendan_Eich), qui travaillait à
 l'époque pour [Netscape](https://fr.wikipedia.org/wiki/Netscape).
 
 **Historiquement, Javascript est un langage client**, qui s'éxécute uniquement

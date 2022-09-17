@@ -61,7 +61,7 @@ window.removeEventListener() // supprime un écouteur d'évènement sur la fenê
 ---
 
 ## Exos
-- afficher l'heure courante
+- afficher l'heure toutes les secondes en utilisant `setInterval()`
 
 ---
 

@@ -45,8 +45,8 @@ const isNegative = !isPositive; // false
 ```js
 const x = 3;
 
-x > 3 && x < 10
-x > 3 || x > 30
+x > 3 && x < 10 // ET
+x > 3 || x > 30 // OU
 ```
 
 ## [Conditions](https://dorey.github.io/JavaScript-Equality-Table/)

@@ -15,6 +15,19 @@ console.log('*** Bonjour ***');
  */
 
 /**========================================================================
+ *                           Somme
+ *========================================================================**/
+console.log('*** Somme ***');
+
+/**
+ * 1) Créer une fonction 'somme' qui:
+ * - prend 2 nombres en arguments
+ * - renvoie la somme des deux nombres.
+ *
+ * 2) Utiliser cette fonction sur deux nombres de votre choix
+ */
+
+/**========================================================================
  *                           Pourcentage
  *========================================================================**/
 console.log('*** Pourcentage ***');
@@ -40,17 +53,34 @@ console.log('*** [Bonus] Limite ***');
 /**
  * 1) Créer une fonction 'limit' qui:
  * - prend en entrée un nombre de départ
- * - calcule le nombre d'opérations nécessaires pour se rapprocher le plus possible de 1 / 1_000_000,
- * sans être plus petit (utiliser une boucle while)
- * - renvoie le nombre calculé
+ * - divise ce nombre par 2 jusqu'à ce que le nombre soit plus petit que 1 / 1_000_000
+ * - renvoie le nombre de fois où on a divisé.
  */
 
 /**
- * 2) Modifier cette fonction pour pouvoir fournir en entrée:
- * - la limite
- * - la tolérance
+ * Dans la question précédente, la limite était 0, et la tolérance 1 / 1_000_000
+ * 2) Modifier la fonction 'limit' pour pouvoir fournir en entrée:
+ * - une limite
+ * - une tolérance
  */
 
 /**
  * 3) Modifier la fonction "limit" pour faire la même chose sans aucune boucle.
+ */
+
+/**========================================================================
+ *                           [Bonus] Say Hello
+ *========================================================================**/
+console.log('*** [Bonus] Say Hello ***');
+
+const languages = ['fr', 'es', 'de', 'it', 'jp'];
+
+/**
+ * 1) Créer une fonction 'prepareHello' qui prend en entrée une langue 'lang' ('fr', 'it', 'es', 'de', ...)
+ * et qui, en fonction de la langue, renvoie une fonction anonyme.
+ * - la fonction anonyme doit prendre en entrée un 'name'
+ * - la fonction anonyme doit renvoyer une string de type "Bonjour [name]"
+ * - si on ne passe pas de langue, ou si la langue n'est pas reconnue, utiliser l'anglais par défaut
+ * 2) Utiliser "prepareHello" pour créer plusieurs fonctions pour dire bonjour dans plusieurs langues
+ * 3) Tester les fonctions créées
  */

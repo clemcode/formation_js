@@ -32,8 +32,6 @@
 - #### [La fenêtre](./contenus/chapters/3_browser/3-1_window.md)
 - #### [Le DOM](./contenus/chapters/3_browser/3-2_dom.md)
 - #### [Les évènements](./contenus/chapters/3_browser/3-3_events.md)
-- #### [Interagir avec le réseau](./contenus/chapters/3_browser/3-4_fetch.md)
-- #### [Modules](./contenus/chapters/3_browser/3-5_modules.md)
 
 ## 4. Travaux dirigés
 

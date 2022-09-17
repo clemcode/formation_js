@@ -35,6 +35,8 @@ prenoms.includes('Malik'); // true
 
 ## Manipuler un tableau
 
+### Ajouter dans un tableau
+
 On peut ajouter un élément à un tableau avec
 - `.push()`, pour le mettre à la fin
 - `.unshift()`, pour le mettre au début
@@ -45,6 +47,8 @@ const array = [1, 2, 3];
 array.push(23); // [1, 2, 3, 23]
 array.unshift(443); // [443, 1, 2, 3, 23]
 ```
+
+### Supprimer dans un tableau
 
 On peut supprimer un élément d'un tableau avec
 - `.pop()`, pour l'enlever à la fin
@@ -59,19 +63,36 @@ const a = array.pop(); // a vaut 3, et array vaut [1, 2]
 const b = array.shift(); // b vaut 1, et array vaut [2]
 ```
 
+> Il est aussi possible d'ajouter ou supprimer à des positions précises dans le tableau, mais c'est un peu plus complexe.
+
+### Trier
+
 Il est possible de trier un tableau.
 
 ```js
-const array = [10, 3, 6, 2];
+const array = [7, 3, 6, 2];
 
-array.sort(); // [2, 3, 6, 10]
+array.sort(); // [2, 3, 6, 7]
 ```
+
+**Attention**: le `.sort()` par défaut trie par ordre alphanumérique.
 
 Dans tous les cas, que l'on ajoute ou supprime une valeur d'un tableau, la position du tableau dans l'univers n'a pas changé, même si son "contenu" a changé.
 
 > `.sort()` permet aussi de trier des valeurs plus complexes que des simples nombres.
 
 > Il existe plusieurs d'autres méthodes pour manipuler un tableau ou obtenir des infos sur un tableau.
+
+### Aplatir
+
+Parfois on a des tableaux imbriqués. On peut "aplatir" un tableau sur un niveau avec `.flat()`.
+
+```js
+const tableau = [[1, 2], 3, [4, 5]];
+const tableauAplati = tableau.flat(); // [1, 2, 3, 4, 5]
+```
+
+> `.flat()` crée un nouveau tableau, et ne modifie pas le tableau d'origine.
 
 ## Itérer sur un tableau
 
