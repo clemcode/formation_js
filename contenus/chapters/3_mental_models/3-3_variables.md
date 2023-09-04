@@ -133,8 +133,8 @@ x = 0;
 
 ## _**À vos crayons !!!**_
 
-- Faire les exercices du fichier `/exos/1_mental_models/1-3_variables.md`
+- Faire les exercices du fichier `/exos/3_mental_models/3-3_variables.md`
 
 ---
 
-### _À suivre: [Étudions les valeurs](./1-4_types.md)_
+### _À suivre: [Les égalités](./3-4_equality.md)_

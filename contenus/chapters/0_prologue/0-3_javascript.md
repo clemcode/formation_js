@@ -65,4 +65,4 @@ Un status quo est donc en place: on ne corrige pas des failles de Javascript, on
 
 ---
 
-### _À suivre: [Le modèle mental](../1_mental_models/1-1_introduction.md)_
+### _À suivre: [La syntaxe Javascript](../1_syntax/1-0_introduction.md)_

@@ -83,4 +83,4 @@ Et c'est tout.
 
 ---
 
-### _À suivre: [Valeurs et variables](./1-3_variables.md)_
+### _À suivre: [Valeurs et variables](./3-3_variables.md)_

@@ -7,33 +7,40 @@
 - #### [CSS](./contenus/chapters/0_prologue/0-2_css.md)
 - #### [Javascript](./contenus/chapters/0_prologue/0-3_javascript.md)
 
-## 1. Mieux comprendre Javascript
+## 1. Utiliser Javascript
 
-- #### [Modèles mentaux](./contenus/chapters/1_mental_models/1-1_introduction.md)
-- #### [L'univers Javascript](./contenus/chapters/1_mental_models/1-2_universe.md)
-- #### [Les variables](./contenus/chapters/1_mental_models/1-3_variables.md)
-- #### [Étudions les valeurs](./contenus/chapters/1_mental_models/1-4_types.md)
-- #### [Égalité](./contenus/chapters/1_mental_models/1-5_equality.md)
-- #### [Propriétés](./contenus/chapters/1_mental_models/1-6_properties.md)
+- #### [Introduction](./contenus/chapters/1_syntax/1-0_introduction.md)
+- #### [Assignations](./contenus/chapters/1_syntax/1-1_assignments.md)
+- #### [Conditions](./contenus/chapters/1_syntax/1-2_conditions.md)
+- #### [Boucles](./contenus/chapters/1_syntax/1-3_loops.md)
+- #### [Fonctions](./contenus/chapters/1_syntax/1-4_functions.md)
+- #### [Tableaux](./contenus/chapters/1_syntax/1-5_arrays.md)
+- #### [Librairies standard](./contenus/chapters/1_syntax/1-6_libs.md)
 
-## 2. Utiliser Javascript
+## 2. Interagir avec le navigateur
 
-- #### [Introduction](./contenus/chapters/2_syntax/2-0_introduction.md)
-- #### [Assignations](./contenus/chapters/2_syntax/2-1_assignments.md)
-- #### [Conditions](./contenus/chapters/2_syntax/2-2_conditions.md)
-- #### [Boucles](./contenus/chapters/2_syntax/2-3_loops.md)
-- #### [Fonctions](./contenus/chapters/2_syntax/2-4_functions.md)
-- #### [Tableaux](./contenus/chapters/2_syntax/2-5_arrays.md)
-- #### [Librairies standard](./contenus/chapters/2_syntax/2-6_libs.md)
+- #### [Outils](./contenus/chapters/2_browser/2-0_devtools.md)
+- #### [La fenêtre](./contenus/chapters/2_browser/2-1_window.md)
+- #### [Le DOM](./contenus/chapters/2_browser/2-2_dom.md)
+- #### [Les évènements](./contenus/chapters/2_browser/2-3_events.md)
+- #### [Les formulaires](./contenus/chapters/2_browser/2-3_events.md)
 
-## 3. Dans le navigateur
+## 3. Mieux comprendre Javascript
 
-- #### [Outils](./contenus/chapters/3_browser/3-0_devtools.md)
-- #### [La fenêtre](./contenus/chapters/3_browser/3-1_window.md)
-- #### [Le DOM](./contenus/chapters/3_browser/3-2_dom.md)
-- #### [Les évènements](./contenus/chapters/3_browser/3-3_events.md)
+- #### [Modèles mentaux](./contenus/chapters/3_mental_models/3-1_introduction.md)
+- #### [L'univers Javascript](./contenus/chapters/3_mental_models/3-2_universe.md)
+- #### [Les variables](./contenus/chapters/3_mental_models/3-3_variables.md)
+- #### [Égalité](./contenus/chapters/3_mental_models/3-4_equality.md)
+- #### [Propriétés](./contenus/chapters/3_mental_models/3-5_properties.md)
 
-## 4. Travaux dirigés
+## 4. Introduction à l'asynchrone
+
+- #### [Asynquoi ?](./contenus/chapters/4_async/4-0_intro.md)
+- #### [`async`/`await`](./contenus/chapters/4_async/4-1_async_await.md)
+- #### [`fetch`](./contenus/chapters/4_async/4-2_fetch.md)
+- #### [Encore des Promesses](./contenus/chapters/4_async/4-3_more.md)
+
+## 5. Travaux dirigés
 
 Par exemple:
 - Countdown

@@ -104,6 +104,7 @@ e.prepend(enfant); // ajoute un enfant à l'élément en premier enfant
 e.remove(); // retire l'élement de l'arbre
 e.removeChild(enfant); // retire un enfant de l'arbre
 e.replaceWith(n2); // remplace l'élément par un autre
+e.scrollIntoView(); // déplace la position de scroll du container de l'élément pour que ce dernier soit visible;
 // ...
 ```
 
@@ -161,11 +162,11 @@ e.classList.contains('class1');
 
 ## Exercices
 
-- Ouvrir le dossier `/exos/3_browser/3-2_dom`
+- Ouvrir le dossier `/exos/2_browser/2-2_dom`
 - Ouvrir le fichier `index.html` dans votre navigateur
 - Suivre les indications du fichier `index.js`, et vérifier les résultats dans
   votre navigateur
 
 ---
 
-### _À suivre: [Évènements](./3-3_events.md)_
+### _À suivre: [Évènements](./2-3_events.md)_

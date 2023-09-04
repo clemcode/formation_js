@@ -73,11 +73,11 @@ aujourdHui - uneDate; // soustrait les dates, renvoie un entier en millisecondes
 
 ## Exos
 
-- Ouvrir le dossier `/exos/2_syntax/2-6_libs`
+- Ouvrir le dossier `/exos/1_syntax/1-6_libs`
 - Ouvrir le fichier `index.html` dans votre navigateur
 - Suivre les indications du fichier `.js`, et vérifier les résultats dans
   votre navigateur
 
 ---
 
-### _À suivre: [Le navigateur](../3_browser/3-0_devtools.md)_
+### _À suivre: [Le navigateur](../2_browser/2-0_devtools.md)_

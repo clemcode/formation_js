@@ -40,10 +40,6 @@ window.open() // ouvre un nouvel onglet ou fenêtre
 window.close() // ferme la fenêtre
 window.stop() // arrête le chargement de la page
 
-window.scroll() // scroll jusqu'à une position donnée
-window.scrollBy() // scroll d'une certaine distance
-window.scrollTo() // scroll jusqu'à un élément particulier
-
 window.setInterval() // crée un intervalle de temps régulier
 window.clearInterval() // annule un intervalle donné
 window.setTimeout() // crée un décalage de temps
@@ -61,8 +57,11 @@ window.removeEventListener() // supprime un écouteur d'évènement sur la fenê
 ---
 
 ## Exos
-- afficher l'heure toutes les secondes en utilisant `setInterval()`
+- Ouvrir le dossier `/exos/2_browser/2-1_window`
+- Ouvrir le fichier `index.html` dans votre navigateur
+- Suivre les indications du fichier `index.js`, et vérifier les résultats dans
+  votre navigateur
 
 ---
 
-### _À suivre: [Le DOM](./3-2_dom.md)_
+### _À suivre: [Le DOM](./2-2_dom.md)_

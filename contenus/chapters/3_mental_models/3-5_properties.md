@@ -180,8 +180,8 @@ Au final, tout n'est qu'une histoire de câbles.
 
 ## _**À vos crayons !!!**_
 
-- Faire les exercices du fichier [`/exos/1-6_properties.md`](../../../exos/1-6_properties.md)
+- Faire les exercices du fichier [`/exos/3-5_properties.md`](../../../exos/3-5_properties.md)
 
 ---
 
-### _À suivre: [Syntaxe](../2_syntax/2-1_assignments.md)_
+### _À suivre: [Asynchrone](../4_async/4-0_intro.md)_
