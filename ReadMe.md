@@ -41,11 +41,4 @@
 - #### [`fetch`](./contenus/chapters/4_async/4-2_fetch.md)
 - #### [Encore des Promesses](./contenus/chapters/4_async/4-3_more.md)
 
-## 5. Travaux dirigés
-
-Par exemple:
-- Countdown
-- Générateur de mot de passe
-- Trombinoscope
-- Calculatrice
-- ...
+## 5. Travaux dirigés: Touitter
