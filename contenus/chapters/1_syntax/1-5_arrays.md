@@ -33,6 +33,8 @@ prenoms[prenoms.length - 1]; // Satsuki
 prenoms.includes('Malik'); // true
 ```
 
+> Sous le capot, un tableau est en réalité un objet particulier.
+
 ## Manipuler un tableau
 
 ### Ajouter dans un tableau

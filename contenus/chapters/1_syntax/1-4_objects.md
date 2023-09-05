@@ -31,7 +31,7 @@ console.log(personne.name);
 Pour modifier les valeurs d'un objet, il faut réassigner la valeur correspondant à la clé que l'on souhaite modifier.
 
 ```js
-personne.job = "Unemployed;
+personne.job = "Unemployed";
 ```
 
 > Réassigner les valeurs d'un objet s'appelle "muter un objet", et peut avoir des conséquences inattendues.

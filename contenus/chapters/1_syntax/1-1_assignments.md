@@ -99,6 +99,16 @@ a++; // a += 1
 a--; // a -= 1
 ```
 
+## Types de valeurs
+
+Il existe différents types de valeur, dont nous reparlerons un peu plus tard.
+
+Les plus courants sont:
+- les booléens, `true` et `false`
+- les nombres, `1`, `3.23`, ...
+- les strings (chaînes de caractères), `"coucou"`, `"Romain"`, ...
+- les objets
+
 ---
 
 ## À retenir
