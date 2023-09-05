@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html lang="fr">
+  <head>
+    <meta charset="utf-8" />
+
+    <meta description="Des exercices de base en JS" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+
+    <link
+      rel="stylesheet"
+      href="https://necolas.github.io/normalize.css/latest/normalize.css"
+    />
+    <link rel="stylesheet" href="../../../styles/reset.css" />
+    <link rel="stylesheet" href="../../../styles/style.css" />
+    <link rel="stylesheet" href="./style.css" />
+
+    <script src="./index.js" defer></script>
+
+    <title>Navigateur - Formulaires</title>
+  </head>
+
+  <body>
+    <h1>Navigateur</h1>
+    <h2>Formulaires</h2>
+
+    <p>Ajouter un candidat</p>
+
+    <form id="info">
+      <label for="name">Nom</label>
+      <input id="name" name="name" required />
+
+      <label for="age">Âge</label>
+      <input id="age" name="age" type="number" required />
+
+      <label>Couleur préférée</label>
+      <label for="blue"
+        >Bleu <input id="blue" name="color" type="radio" value="blue"
+      /></label>
+
+      <label for="red"
+        >Rouge <input id="red" name="color" type="radio" value="red"
+      /></label>
+
+      <label for="green"
+        >Vert <input id="green" name="color" type="radio" value="green"
+      /></label>
+
+      <button type="submit">Ajouter</button>
+    </form>
+
+    <section>
+      <h3>Candidats</h3>
+    </section>
+  </body>
+</html>

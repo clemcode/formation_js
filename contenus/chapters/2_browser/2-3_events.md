@@ -133,6 +133,11 @@ element.addEventListener("keydown", function (event) {
 
 ## Exercices
 
+- Ouvrir le dossier `/exos/2_browser/2-3_events`
+- Ouvrir le fichier `index.html` dans votre navigateur
+- Suivre les indications du fichier `index.js`, et vérifier les résultats dans
+  votre navigateur
+
 ---
 
-### _À suivre: [Interagir avec le réseau](./3-4_fetch.md)_
+### _À suivre: [Formulaires](./2-4_forms.md)_

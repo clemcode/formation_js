@@ -142,4 +142,4 @@ En Javascript moderne, il est courant d'utiliser les méthodes fonctionnelles de
 
 ---
 
-### _À suivre: [Quelques librairies standards](./1-6_libs.md)_
+### _À suivre: [Fonctions](./1-6_functions.md)_

@@ -1,5 +1,5 @@
 'use strict';
-console.log('Exos 3-3: Évènements');
+console.log('Exos 2-3: Évènements');
 
 /**========================================================================
  *                           Couleurs

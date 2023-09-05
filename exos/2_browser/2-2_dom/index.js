@@ -1,5 +1,5 @@
 'use strict';
-console.log('Exos 3-2: DOM');
+console.log('Exos 2-2: DOM');
 
 /**========================================================================
  *                           Chirugie

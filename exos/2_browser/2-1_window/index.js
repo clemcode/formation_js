@@ -1,5 +1,5 @@
 'use strict';
-console.log('Exos 2-1: La fenêtre');
+console.log('Exos 1-1: La fenêtre');
 
 /**========================================================================
  *                           C'est l'heure !

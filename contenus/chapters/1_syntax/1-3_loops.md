@@ -114,4 +114,4 @@ En effet, si la condition d'arrêt est mal définie, ou si on oublie de faire é
 
 ---
 
-### _À suivre: [Fonctions](./1-4_functions.md)_
+### _À suivre: [Objets](./1-4_objects.md)_

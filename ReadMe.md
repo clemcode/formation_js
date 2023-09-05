@@ -13,9 +13,10 @@
 - #### [Assignations](./contenus/chapters/1_syntax/1-1_assignments.md)
 - #### [Conditions](./contenus/chapters/1_syntax/1-2_conditions.md)
 - #### [Boucles](./contenus/chapters/1_syntax/1-3_loops.md)
-- #### [Fonctions](./contenus/chapters/1_syntax/1-4_functions.md)
+- #### [Objets](./contenus/chapters/1_syntax/1-4_objects.md)
 - #### [Tableaux](./contenus/chapters/1_syntax/1-5_arrays.md)
-- #### [Librairies standard](./contenus/chapters/1_syntax/1-6_libs.md)
+- #### [Fonctions](./contenus/chapters/1_syntax/1-6_functions.md)
+- #### [Librairies standard](./contenus/chapters/1_syntax/1-7_libs.md)
 
 ## 2. Interagir avec le navigateur
 
@@ -23,7 +24,7 @@
 - #### [La fenêtre](./contenus/chapters/2_browser/2-1_window.md)
 - #### [Le DOM](./contenus/chapters/2_browser/2-2_dom.md)
 - #### [Les évènements](./contenus/chapters/2_browser/2-3_events.md)
-- #### [Les formulaires](./contenus/chapters/2_browser/2-3_events.md)
+- #### [Les formulaires](./contenus/chapters/2_browser/2-4_forms.md)
 
 ## 3. Mieux comprendre Javascript
 

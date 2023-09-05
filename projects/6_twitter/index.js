@@ -1,6 +1,6 @@
 // ### Projet Touitter ###
 
-/* [0] récupérer les tweets à l'aide des questions 3 et 4 des exos Async.
+/* [0] récupérer la donnée de tweets à cette url: https://raw.githubusercontent.com/bleucitron/data/master/data/tweets.json
     Observer la structure de donnée des tweets dans la console de votre navigateur.
 */
 
@@ -31,12 +31,25 @@
 /* [11] créer une fonction, qui pour un tableau tweets en entrée, crée et retourne un <ol> rempli de <li>
     et l'utiliser à [3], [6], [9] */
 
-/* [12] créer une fonction qui crée et renvoie le bouton de filtre.
-      Cette fonction doit contenir toute la logique liée au filtre.
-      Utiliser cette fonction pour remplacer le code de création du bouton de filtre.
-    */
+/**
+ * [12] ajoutez un bouton pour récupérer de la donnée supplémentaire à cette URL https://raw.githubusercontent.com/bleucitron/data/master/data/tweets2.json
+ * - Essayer d'optimiser le chargement pour éviter d'attendre trop longtemps
+ */
+
+// ### BONUS: FILTRES ###
+
+// [1] Récupérer tous les noms des auteurs des tweets, sans doublons
+
+// [2] Afficher les noms sous forme de bouton radio, placés dans un formulaire.
+
+/**
+ * [3] À la soumission du formulaire, filtrer les tweets pour n'afficher que ceux de l'auteur sélectionné
+ * - faire en sorte que le filtre de langue fasse également partie du formulaire, sous la forme d'un checkbox
+ * - le filtre de langue doit continuer à fonctionner
+ */
 
 // ### BONUS: LOCALSTORAGE ###
+
 // [1] Rajouter un bouton "fav" à chaque li
 
 /* [2] quand le bouton est cliqué, changer le style du li (rajouter une classe 'fav')
