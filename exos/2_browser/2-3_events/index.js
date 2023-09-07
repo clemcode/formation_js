@@ -7,12 +7,12 @@ console.log('Exos 2-3: Évènements');
 console.log('*** Couleurs ***');
 
 /**
- * 1) Créez une <div> pour chaque couleur, avec la class 'color'
+ * 1) Créez un <button> pour chaque couleur, avec la class 'color'
  * 2) L'ajouter à l'élément de la page qui a l'id 'exo1'
- * 3) Chaque div doit avoir un fond coloré de sa couleur
- * 4) Chaque div doit afficher en textContent le texte de sa couleur,
+ * 3) Chaque button doit avoir un fond coloré de sa couleur
+ * 4) Chaque button doit afficher en textContent le texte de sa couleur,
  * ainsi que la position de la couleur dans le tableau  (1. white)
- * 5) Au click, chaque div doit changer la couleur du background du body
+ * 5) Au click, chaque button doit changer la couleur du background du body
  */
 
 const colors = [

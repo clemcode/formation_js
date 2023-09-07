@@ -114,7 +114,6 @@ element.addEventListener("keydown", function (event) {
   event.ctrlKey; // informe si CTRL est enfoncée
   event.metaKey; // informe si META / COMMAND est enfoncée
   event.shiftKey; // informe si SHIFT est enfoncée
-  event.key; // renvoie la valeur de la touche
   event.repeat; // informe si la touche est laissée enfoncée
   // non exhaustif
 });
