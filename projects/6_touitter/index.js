@@ -32,8 +32,10 @@
     et l'utiliser à [3], [6], [9] */
 
 /**
- * [12] ajoutez un bouton pour récupérer de la donnée supplémentaire à cette URL https://raw.githubusercontent.com/bleucitron/data/master/data/tweets2.json
+ * [12] modifier le chargement initial des tweets pour récupérer de la donnée supplémentaire à cette URL :
+ * https://raw.githubusercontent.com/bleucitron/data/master/data/tweets2.json
  * - Essayer d'optimiser le chargement pour éviter d'attendre trop longtemps
+ * - L'écran doit afficher 500 tweets
  */
 
 // ### BONUS: FILTRES ###
