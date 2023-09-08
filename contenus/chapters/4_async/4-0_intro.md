@@ -5,7 +5,7 @@
 ## Le concept d'asynchrone
 
 Un code asynchrone permet les opérations asynchrones, qui prennent du temps sans
-bloquer l'éxécution de la suite.
+bloquer l'exécution de la suite.
 
 C'est une problématique fortement liée au réseau, et à ses fluctuations.
 
