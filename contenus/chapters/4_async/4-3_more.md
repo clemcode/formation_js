@@ -1,74 +1,41 @@
 # Encore des Promesses
 
-> Devenir un pro des Promesses
-
-## Chaînage
-
-Une Promesse est un _thenable_, c'est-à-dire qu'on peut écrire `.then()` ou `.catch()` derrière. Mais `p.then()` ou `p.catch()` sont également eux-mêmes des Promesse. On peut donc chaîner les Promesses.
-
-`p.then().then().catch().then()...`
-
-```js
-maPromesse.then(function (vp1) {
-  console.log('VP1', vp1);
-
-  autreFonctionAsync(vp1).then(function (vp2) {
-    console.log('VP2', vp2);
-  });
-});
-
-// Mieux
-maPromesse
-  .then(function (vp1) {
-    console.log('VP1', vp1);
-    return autreFonctionAsync(vp1);
-  })
-  .then(function (vp2) {
-    console.log('VP2', vp2);
-  });
-```
+> Gérer plusieurs Promesses en même temps
 
 ## Synchroniser
 
 Si on a plusieurs Promesses, on peut se retrouver avec du code comme ça:
 
 ```js
-p1.then(function (vp1) {
-  console.log(vp1);
 
-  p2.then(function (vp2) {
-    console.log(vp1, vp2);
-  });
-});
+const vp1 = await fetch("url1")
+const vp2 = await fetch("url2")
 ```
 
-Si jamais la création de `p2` dépend de `vp1`, alors il n'y a pas de réel problème.
+Si jamais la requête vers `url2` dépend de `vp1`, alors il n'y a pas de réel problème.
 
-Mais, souvent, `p1` et `p2` sont 2 Promesses indépendantes, dont on veut traiter les valeurs promises ensemble. Dans ce cas, le code plus haut n'est pas idéal, car on attend que `p1` se termine pour attendre `p2`.
+Mais, souvent les 2 requêtes sont indépendantes, et on veut traiter les valeurs promises ensemble. Dans ce cas, le code plus haut n'est pas idéal, car on attend que le premier appel se termine pour commencer le 2e.
 
 En réalité, on veut attendre en même temps, et **synchroniser** quand toutes les Promesses sont terminées.
 
 Si on veut synchroniser plusieurs promesses, on peut utiliser
 
 - `Promise.all()`, crée la promesse d'avoir **TOUTES** les promesses **résolues**
-- `Promise.allSettled()`, crée la promesse d'avoir toutes les promesses **terminées**
 
 ```js
-Promise.all([promesse1, promesse2]).then(function (tableauDesResultats) {
-  console.log(tableauDesResultats); // [resultat1, resultat2]
-});
 
-Promise.allSettled([promesse1, promesse2]).then(function (tableauDesResultats) {
-  console.log(tableauDesResultats); // [resultat1, resultat2]
-});
+const p1 = fetch("url1");
+const p2 = fetch("url2");
+
+const valeurs = Promise.all([p1, p2]); // valeurs vaut [vp1, vp2]
 ```
 
 ---
 
 ## À retenir
 
-- les Promesses peuvent être chaînées
-- on utilise `Promise.all()` ou `Promise.allSettled()` pour synchroniser plusieurs Promesses
+- utiliser plusieurs Promesses indépendantes peut amener à attendre pour rien
+- pour éviter ça, on utilise `Promise.all()`
 
 ---
 
