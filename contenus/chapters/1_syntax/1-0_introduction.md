@@ -95,6 +95,8 @@ Il permet d'éviter certaines erreurs ou mauvaises pratiques liées à la nature
 
 **Il est fortement recommandé de l'activer dans tous nos fichiers**.
 
+*Lors de l'utilisation de modules ESM, le mode strict est activé par défaut.*
+
 ---
 
 ### _À suivre: [Assignations de variables](./1-1_assignments.md)_

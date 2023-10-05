@@ -19,8 +19,7 @@ const bordel = [1, 'Jeanne', true, () => {}, {}, []];
 ```
 
 - on peut accéder à l'élément `n` d'un tableau avec `tableau[n-1]`
-- sa longueur
-est `tableau.length`
+- sa longueur est `tableau.length`
 - on peut vérifier si un tableau contient un élément avec `tableau.includes(valeur)`
 
 ```js

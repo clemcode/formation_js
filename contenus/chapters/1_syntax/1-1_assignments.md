@@ -76,7 +76,7 @@ let a = 10;
 a = a + 5;
 ```
 
-Une simplification de syntaxe introduite pas le langage C++ permet de raccourcir:
+Une simplification de syntaxe introduite par le langage C++ permet de raccourcir:
 
 ```js
 let a = 10;
@@ -84,6 +84,7 @@ a += 5;
 ```
 
 Ces raccourcis sont aussi possibles pour les autres opérateurs classiques:
+
 ```js
 let a = 10;
 a -= 5; // a = a - 5
@@ -93,6 +94,7 @@ a %= 5; // a = a % 5
 ```
 
 Pour l'addition et la soustraction, dans le cas où le nombre ajouté est `1`, on peut se contenter de:
+
 ```js
 let a = 10;
 a++; // a += 1
